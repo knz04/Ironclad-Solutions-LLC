@@ -52,7 +52,7 @@ const content: Content[] = [
 
 function FiveFs() {
   return (
-    <div className="md:h-screen 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8">
+    <div className="lg:h-[120vh] 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8">
       <div className="flex flex-col justify-center items-center py-12">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           How We Can Help

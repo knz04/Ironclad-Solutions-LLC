@@ -34,7 +34,7 @@ const team: Team[] = [
 
 function WhoWeAre() {
   return (
-    <div className="md:h-screen 2xl:h-[70vh] bg-linear-to-b from-[#555759] to-neutral-900">
+    <div className="lg:h-screen 2xl:h-[70vh] bg-linear-to-b from-[#555759] to-neutral-900">
       <div className="flex flex-col justify-center items-center py-10">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           Who We Are
