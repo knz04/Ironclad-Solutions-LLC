@@ -37,13 +37,13 @@ function Navbar() {
           </div>
           <nav className="hidden md:block">
             <ul className=" text-lg flex gap-x-6 items-center text-neutral-50">
-              <li className="hover:underline">
+              <li className="hover:underline font-light">
                 <a href="#">Home</a>
               </li>
-              <li className="hover:underline">
+              <li className="hover:underline font-light">
                 <a href="#">Apply Now</a>
               </li>
-              <li className="hover:underline">
+              <li className="hover:underline font-light">
                 <a href="#">Schedule a Meeting</a>
               </li>
             </ul>
@@ -51,19 +51,19 @@ function Navbar() {
         </div>
 
         {isMenuOpen && (
-          <nav className="md:hidden absolute top-full left-0 right-0 w-full bg-neutral-950 shadow-lg z-10 py-4">
+          <nav className="md:hidden absolute top-full left-0 right-0 w-full bg-neutral-950 shadow-lg z-20 py-4">
             <ul className="text-lg flex flex-col items-center text-neutral-50">
-              <li className="hover:bg-neutral-900 w-full text-start p-4">
+              <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
                 <a href="#" onClick={toggleMenu}>
                   Home
                 </a>
               </li>
-              <li className="hover:bg-neutral-900 w-full text-start p-4">
+              <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
                 <a href="#" onClick={toggleMenu}>
                   Apply Now
                 </a>
               </li>
-              <li className="hover:bg-neutral-900 w-full text-start p-4">
+              <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
                 <a href="#" onClick={toggleMenu}>
                   Schedule a Meeting
                 </a>
