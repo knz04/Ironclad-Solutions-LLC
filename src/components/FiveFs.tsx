@@ -52,15 +52,15 @@ const content: Content[] = [
 
 function FiveFs() {
   return (
-    <div className="md:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8">
+    <div className="md:h-screen 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8">
       <div className="flex flex-col justify-center items-center py-12">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           How We Can Help
         </p>
-        <p className="text-base md:text-xl font-light text-neutral-50">
+        <p className="text-base md:text-xl text-center font-light text-neutral-50">
           Financial strategy and mentorship grounded in the Five Fs:
         </p>
-        <p className="text-base md:text-xl text-neutral-50 font-bold">
+        <p className="text-base md:text-xl text-center text-neutral-50 font-bold">
           Faith, Family, Finance, Fitness, and Fun
         </p>
       </div>

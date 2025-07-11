@@ -1,18 +1,9 @@
-import contact from "../assets/contact.png";
+import React from "react";
 
 function Contact() {
   return (
-    <div className="relative flex flex-col md:h-[90vh] justify-center items-center py-12 px-4 bg-neutral-900">
-      <div
-        className="absolute inset-0 top-90 z-0 grayscale opacity-15 bf"
-        style={{
-          backgroundImage: `url('${contact}')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
-      <div className="flex flex-col justify-center pb-8 z-20">
+    <div className="flex flex-col md:min-h-screen 2xl:min-h-[70vh] justify-center items-center py-12 px-4 bg-neutral-900 overflow-hidden">
+      <div className="flex flex-col justify-center pb-8">
         <p className="text-2xl md:text-4xl font-semibold text-center text-neutral-50 pb-2">
           Contact Us
         </p>
@@ -21,7 +12,8 @@ function Contact() {
         </p>
       </div>
 
-      <form className="w-full max-w-2xl bg-white p-8 shadow-xl z-20">
+      <form className="w-full max-w-2xl bg-white/90 p-8 rounded-lg shadow-xl">
+        {" "}
         <div className="flex flex-col gap-y-6">
           <div className="flex flex-col md:flex-row md:gap-x-4">
             <div className="flex flex-col flex-1 mb-4 md:mb-0">
@@ -120,7 +112,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer text-neutral-50 font-semibold py-3 px-8 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 self-center mt-4"
+            className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer text-neutral-50 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 self-center mt-4"
           >
             <p className="text-base">Send</p>
           </button>
