@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import icon from "../assets/icon.png";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";

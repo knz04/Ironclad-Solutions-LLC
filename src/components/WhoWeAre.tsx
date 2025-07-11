@@ -1,4 +1,3 @@
-import React from "react";
 import andre from "../assets/andre-scroggie.jpeg";
 import augie from "../assets/augie-bowdry.jpeg";
 import kevin from "../assets/kevin-caballero.jpeg";

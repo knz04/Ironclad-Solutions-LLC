@@ -1,6 +1,4 @@
-import React from "react";
 import schedule from "../assets/schedule.webp";
-import Contact from "../components/Contact";
 import Form from "../components/Form";
 
 function Schedule() {

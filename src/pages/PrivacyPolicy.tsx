@@ -1,5 +1,3 @@
-import React from "react";
-
 function PrivacyPolicy() {
   return (
     <div className="bg-neutral-50 w-full ">

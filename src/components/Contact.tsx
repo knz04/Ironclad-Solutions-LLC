@@ -1,6 +1,4 @@
-import React from "react";
 import contact from "../assets/contact.png";
-import { NavLink } from "react-router-dom";
 import Form from "./Form";
 
 function Contact() {
