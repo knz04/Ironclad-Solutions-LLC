@@ -1,5 +1,5 @@
 import React from "react";
-import schedule from "../assets/schedule.png";
+import schedule from "../assets/schedule.webp";
 import Contact from "../components/Contact";
 import Form from "../components/Form";
 
@@ -13,7 +13,7 @@ function Schedule() {
         }}
       ></div>
 
-      <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
       <div className="relative z-10 flex flex-col justify-center items-center py-10 px-4 h-full">
         <p className="text-4xl text-neutral-50 py-4 font-bold">

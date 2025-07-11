@@ -41,13 +41,13 @@ function Navbar() {
           <nav className="hidden md:block">
             <ul className=" text-lg flex gap-x-6 items-center text-neutral-50">
               <li className="hover:underline hover:underline-offset-8 font-light">
-                <a href="#">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li className="hover:underline hover:underline-offset-8 font-light">
-                <a href="#">Apply Now</a>
+                <NavLink to="#">Apply Now</NavLink>
               </li>
               <li className="hover:underline hover:underline-offset-8 font-light">
-                <a href="#">Schedule a Meeting</a>
+                <NavLink to="/schedule">Schedule a Meeting</NavLink>
               </li>
             </ul>
           </nav>
