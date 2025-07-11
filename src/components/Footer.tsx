@@ -1,5 +1,6 @@
 import { Facebook, Instagram } from "lucide-react";
 import equal from "../assets/equal-housing-logo.webp";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -20,14 +21,13 @@ function Footer() {
                 Get in Touch
               </a>
             </p>
-            <a
-              href="#"
-              target="_blank"
+            <NavLink
+              to="/privacy-policy"
               rel="noopener noreferrer"
               className="text-neutral-50 hover:underline text-lg font-bold"
             >
               Privacy Policy
-            </a>
+            </NavLink>
           </div>
           <p className="text-sm leading-relaxed text-neutral-400 max-w-md">
             {" "}

@@ -1,5 +1,6 @@
 import React from "react";
 import contact from "../assets/contact.png";
+import { NavLink } from "react-router-dom";
 
 function Contact() {
   return (
@@ -109,14 +110,14 @@ function Contact() {
               messages from Ironclad Solutions LLC. Consent is not a condition
               of purchase. Msg/data rates may apply. Msg frequency varies. Reply
               STOP to unsubscribe.{" "}
-              <a
-                href="#"
+              <NavLink
+                to="/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2773a6] hover:underline"
               >
                 Privacy Policy & Terms of Service
-              </a>
+              </NavLink>
             </label>
           </div>
 

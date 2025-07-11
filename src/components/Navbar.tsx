@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import icon from "../assets/icon.png";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,9 +31,11 @@ function Navbar() {
 
         <div className="flex flex-1 justify-center md:justify-between items-center mx-auto w-[90%] ">
           <div className="flex gap-x-6 items-center">
-            <img src={icon} alt="Logo" className="h-15" />
+            <NavLink to="/">
+              <img src={icon} alt="Logo" className="h-15" />
+            </NavLink>
             <p className="hidden md:flex text-xl font-bold text-neutral-50">
-              Ironclad Solutions LLC
+              <NavLink to="/">Ironclad Solutions LLC</NavLink>
             </p>
           </div>
           <nav className="hidden md:block">
@@ -54,9 +57,9 @@ function Navbar() {
           <nav className="md:hidden absolute top-full left-0 right-0 w-full bg-neutral-950 shadow-lg z-20 py-4">
             <ul className="text-lg flex flex-col items-center text-neutral-50">
               <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
-                <a href="#" onClick={toggleMenu}>
+                <NavLink to="/" onClick={toggleMenu}>
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
                 <a href="#" onClick={toggleMenu}>
