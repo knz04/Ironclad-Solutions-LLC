@@ -67,9 +67,9 @@ function Navbar() {
                 </a>
               </li>
               <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
-                <a href="/schedule" onClick={toggleMenu}>
+                <NavLink to="/schedule" onClick={toggleMenu}>
                   Schedule a Meeting
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
