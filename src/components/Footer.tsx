@@ -12,14 +12,13 @@ function Footer() {
           <div className="flex flex-row gap-x-6 mb-4">
             {" "}
             <p className="text-lg font-bold text-neutral-50 mb-2 md:mb-0">
-              <a
-                href="#"
-                target="_blank"
+              <NavLink
+                to="/schedule"
                 rel="noopener noreferrer"
                 className="text-neutral-50 hover:underline text-lg font-bold"
               >
                 Get in Touch
-              </a>
+              </NavLink>
             </p>
             <NavLink
               to="/privacy-policy"

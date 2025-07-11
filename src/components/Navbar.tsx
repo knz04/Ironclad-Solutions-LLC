@@ -67,7 +67,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
-                <a href="#" onClick={toggleMenu}>
+                <a href="/schedule" onClick={toggleMenu}>
                   Schedule a Meeting
                 </a>
               </li>
