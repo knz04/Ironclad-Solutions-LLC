@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom";
-
 function Form() {
   return (
     <form className="w-full max-w-2xl bg-white/90 p-8 shadow-xl z-10">
@@ -89,14 +87,14 @@ function Form() {
             messages from Ironclad Solutions LLC. Consent is not a condition of
             purchase. Msg/data rates may apply. Msg frequency varies. Reply STOP
             to unsubscribe.{" "}
-            <NavLink
-              to="/privacy-policy"
+            <a
+              href="/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#2773a6] hover:underline"
             >
               Privacy Policy & Terms of Service
-            </NavLink>
+            </a>
           </label>
         </div>
 
