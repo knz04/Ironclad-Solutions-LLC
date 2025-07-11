@@ -1,8 +1,18 @@
 import React from "react";
+import contact from "../assets/contact.png";
 
 function Contact() {
   return (
-    <div className="flex flex-col md:min-h-screen 2xl:min-h-[70vh] justify-center items-center py-12 px-4 bg-neutral-900 overflow-hidden">
+    <div className="relative flex flex-col md:min-h-screen 2xl:min-h-[70vh] justify-center items-center py-12 px-4 bg-neutral-900 overflow-hidden">
+      <div
+        className="absolute inset-0 z-0 grayscale opacity-15" // Removed 'top-90' and 'bf'
+        style={{
+          backgroundImage: `url('${contact}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
       <div className="flex flex-col justify-center pb-8">
         <p className="text-2xl md:text-4xl font-semibold text-center text-neutral-50 pb-2">
           Contact Us
@@ -12,7 +22,7 @@ function Contact() {
         </p>
       </div>
 
-      <form className="w-full max-w-2xl bg-white/90 p-8 rounded-lg shadow-xl">
+      <form className="w-full max-w-2xl bg-white/90 p-8 shadow-xl z-10">
         {" "}
         <div className="flex flex-col gap-y-6">
           <div className="flex flex-col md:flex-row md:gap-x-4">
@@ -29,7 +39,7 @@ function Contact() {
                 id="name"
                 name="name"
                 placeholder="Your full name"
-                className="border border-neutral-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
+                className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
               />
             </div>
             <div className="flex flex-col flex-1">
@@ -45,7 +55,7 @@ function Contact() {
                 id="email"
                 name="email"
                 placeholder="you@example.com"
-                className="border border-neutral-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
+                className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
               />
             </div>
           </div>
@@ -62,7 +72,7 @@ function Contact() {
               id="phone"
               name="phone"
               placeholder="e.g., +1 (555) 123-4567"
-              className="border border-neutral-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
+              className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
             />
           </div>
 
@@ -79,7 +89,7 @@ function Contact() {
               name="message"
               rows={5}
               placeholder="Tell us how we can help you..."
-              className="border border-neutral-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6] resize-y transition-all duration-200"
+              className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] resize-y transition-all duration-200"
             ></textarea>
           </div>
 
@@ -89,7 +99,7 @@ function Contact() {
               id="terms"
               name="terms"
               required
-              className="mt-1 mr-2 h-5 w-5 text-[#2773a6] border-neutral-300 rounded focus:ring-[#2773a6]"
+              className="mt-1 mr-2 h-5 w-5 text-[#2773a6] border-neutral-300  focus:ring-[#2773a6]"
             />
             <label
               htmlFor="terms"
@@ -112,7 +122,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer text-neutral-50 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 self-center mt-4"
+            className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer text-neutral-50 font-semibold py-3 px-8 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 self-center mt-4"
           >
             <p className="text-base">Send</p>
           </button>
