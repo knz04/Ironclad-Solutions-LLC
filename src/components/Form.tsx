@@ -91,7 +91,6 @@ function Form() {
             to unsubscribe.{" "}
             <NavLink
               to="/privacy-policy"
-              target="_blank"
               rel="noopener noreferrer"
               className="text-[#2773a6] hover:underline"
             >
