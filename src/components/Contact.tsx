@@ -1,9 +1,8 @@
-import React from "react";
 import contact from "../assets/contact.png";
 
 function Contact() {
   return (
-    <div className="relative flex flex-col md:h-screen justify-center items-center py-12 px-4 bg-neutral-900">
+    <div className="relative flex flex-col md:h-[90vh] justify-center items-center py-12 px-4 bg-neutral-900">
       <div
         className="absolute inset-0 top-90 z-0 grayscale opacity-15 bf"
         style={{
@@ -59,7 +58,6 @@ function Contact() {
             </div>
           </div>
 
-          {/* Phone field */}
           <div className="flex flex-col">
             <label
               htmlFor="phone"
@@ -76,7 +74,6 @@ function Contact() {
             />
           </div>
 
-          {/* Message field - changed to textarea */}
           <div className="flex flex-col">
             <label
               htmlFor="message"
@@ -88,19 +85,18 @@ function Contact() {
               required
               id="message"
               name="message"
-              rows={5} // Set number of visible rows
+              rows={5}
               placeholder="Tell us how we can help you..."
               className="border border-neutral-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6] resize-y transition-all duration-200"
             ></textarea>
           </div>
 
-          {/* Terms and Conditions Checkbox */}
           <div className="flex items-start">
             <input
               type="checkbox"
               id="terms"
               name="terms"
-              required // Added required for terms agreement
+              required
               className="mt-1 mr-2 h-5 w-5 text-[#2773a6] border-neutral-300 rounded focus:ring-[#2773a6]"
             />
             <label
@@ -126,7 +122,7 @@ function Contact() {
             type="submit"
             className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer text-neutral-50 font-semibold py-3 px-8 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 self-center mt-4"
           >
-            <p className="text-lg">Send</p>
+            <p className="text-base">Send</p>
           </button>
         </div>
       </form>

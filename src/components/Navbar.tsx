@@ -37,13 +37,13 @@ function Navbar() {
           </div>
           <nav className="hidden md:block">
             <ul className=" text-lg flex gap-x-6 items-center text-neutral-50">
-              <li className="hover:underline font-light">
+              <li className="hover:underline hover:underline-offset-8 font-light">
                 <a href="#">Home</a>
               </li>
-              <li className="hover:underline font-light">
+              <li className="hover:underline hover:underline-offset-8 font-light">
                 <a href="#">Apply Now</a>
               </li>
-              <li className="hover:underline font-light">
+              <li className="hover:underline hover:underline-offset-8 font-light">
                 <a href="#">Schedule a Meeting</a>
               </li>
             </ul>

@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import WhoWeAre from "./components/WhoWeAre";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <FiveFs />
       <WhoWeAre />
       <Contact />
+      <Footer />
     </>
   );
 }
