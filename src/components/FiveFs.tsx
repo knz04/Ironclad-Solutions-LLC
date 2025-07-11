@@ -1,0 +1,94 @@
+import {
+  BanknoteArrowUp,
+  ChartBarIncreasing,
+  Handshake,
+  ShieldHalf,
+  SquarePen,
+} from "lucide-react";
+import React from "react";
+
+interface Content {
+  icon: React.ElementType;
+  title: string;
+  subtitle: string;
+  button: string;
+}
+
+const content: Content[] = [
+  {
+    icon: ShieldHalf,
+    title: "Life Insurance & Protection",
+    subtitle: "Income replacement, living benefits, and legacy strategies.",
+    button: "Explore Life Insurance",
+  },
+  {
+    icon: BanknoteArrowUp,
+    title: "Tax-Advantaged Money Growth",
+    subtitle: "Risk-free, long-term wealth strategies using indexed products.",
+    button: "Learn More",
+  },
+  {
+    icon: SquarePen,
+    title: "Mortgage Strategy & Protection",
+    subtitle:
+      "Purchase, refinance, and mortgage protection—all aligned with a long-term financial vision.",
+    button: "Explore Mortgage Services",
+  },
+  {
+    icon: Handshake,
+    title: "Mentorship & Coaching",
+    subtitle:
+      "Guidance for people seeking purpose-aligned growth in business and life.",
+    button: "Discover Mentorship",
+  },
+  {
+    icon: ChartBarIncreasing,
+    title: "Business Opportunity (GFI & AWM)",
+    subtitle:
+      "Join our platform and build a business that creates income, impact, and freedom.",
+    button: "Explore the Opportunity",
+  },
+];
+
+function FiveFs() {
+  return (
+    <div className="md:h-screen bg-linear-to-b from-neutral-900 to-[#555759] py-8">
+      <div className="flex flex-col justify-center items-center py-12">
+        <p className="text-4xl font-semibold text-neutral-50 pb-2">
+          How We Can Help
+        </p>
+        <p className="text-xl font-light text-neutral-50">
+          Financial strategy and mentorship grounded in the Five Fs:
+        </p>
+        <p className="text-xl text-neutral-50 font-bold">
+          Faith, Family, Finance, Fitness, and Fun
+        </p>
+      </div>
+      <div className="grid grid-cols-5 gap-x-2 px-1">
+        {content.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#2773a6] shadow-xl flex flex-col py-10"
+          >
+            <div className="self-center py-2">
+              <item.icon color="#ffffff" className="self-center w-12 h-12" />
+            </div>
+            <p className="text-2xl/6 text-center font-semibold text-neutral-50 px-6 py-2">
+              {item.title}
+            </p>
+            <p className="text-lg text-center text-neutral-50 px-4 py-3">
+              {item.subtitle}
+            </p>
+            <button className="bg-neutral-50 py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
+              <p className="text-sm text-center italic text-[#2773a6]">
+                → {item.button}
+              </p>
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default FiveFs;

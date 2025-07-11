@@ -4,7 +4,7 @@ import hero from "../assets/hero.png";
 function Hero() {
   return (
     <div
-      className="relative flex flex-col justify-center items-center gap-y-6 bg-[{hero}] h-[50vh] md:h-[88vh] p-12 md:p-4 "
+      className="relative flex flex-col justify-center items-center gap-y-6 bg-[{hero}] h-[50vh] md:h-[88vh] p-12 md:p-4 bg-fixed"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundSize: "cover",
@@ -22,7 +22,7 @@ function Hero() {
       <p className="text-base md:text-xl text-center text-neutral-50 z-10">
         Financial guidance and business mentorship rooted in core values.
       </p>
-      <button className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer mt-6 py-3 px-8 z-10">
+      <button className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer mt-6 py-3 px-8 z-10 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115">
         <p className="text-center text-base text-neutral-50 ">Let's Connect</p>
       </button>
     </div>
