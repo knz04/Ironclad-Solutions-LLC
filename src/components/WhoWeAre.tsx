@@ -42,7 +42,7 @@ function WhoWeAre() {
           Meet the dedicated professionals behind our success.
         </p>
       </div>
-      <div className="grid gap-y-12 md:gap-y-0 md:grid-cols-4 py-8">
+      <div className="grid gap-y-12 md:gap-y-20 lg:gap-y-0 md:grid-cols-2 lg:grid-cols-4 py-8">
         {team.map((item, index) => (
           <div
             key={index}
