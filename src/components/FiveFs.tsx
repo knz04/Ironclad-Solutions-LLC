@@ -52,7 +52,7 @@ const content: Content[] = [
 
 function FiveFs() {
   return (
-    <div className="md:h-screen bg-linear-to-b from-neutral-900 to-[#555759] py-8">
+    <div className="md:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8">
       <div className="flex flex-col justify-center items-center py-12">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           How We Can Help
@@ -73,10 +73,10 @@ function FiveFs() {
             <div className="self-center py-2">
               <item.icon color="#ffffff" className="self-center w-12 h-12" />
             </div>
-            <p className="text-2xl/6 text-center font-semibold text-neutral-50 px-6 py-2">
+            <p className="text-xl md:text-2xl/6 text-center font-semibold text-neutral-50 px-6 py-2">
               {item.title}
             </p>
-            <p className="text-lg text-center text-neutral-50 px-4 py-3">
+            <p className="text-md md:text-lg text-center text-neutral-50 px-4 py-3">
               {item.subtitle}
             </p>
             <button className="bg-neutral-50 py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">

@@ -2,6 +2,7 @@ import "./App.css";
 import FiveFs from "./components/FiveFs";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import WhoWeAre from "./components/WhoWeAre";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <FiveFs />
+      <WhoWeAre />
     </>
   );
 }
