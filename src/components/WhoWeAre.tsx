@@ -11,20 +11,17 @@ interface Team {
 
 const team: Team[] = [
   {
+    profile: sean,
+    name: "Sean Spengler",
+  },
+  {
     profile: augie,
     name: "Augie Bowdry",
   },
-
   {
     profile: andre,
     name: "André Scroggie",
   },
-
-  {
-    profile: sean,
-    name: "Sean Spengler",
-  },
-
   {
     profile: kevin,
     name: "Kevin Caballero",
