@@ -54,17 +54,17 @@ function FiveFs() {
   return (
     <div className="md:h-screen bg-linear-to-b from-neutral-900 to-[#555759] py-8">
       <div className="flex flex-col justify-center items-center py-12">
-        <p className="text-4xl font-semibold text-neutral-50 pb-2">
+        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           How We Can Help
         </p>
-        <p className="text-xl font-light text-neutral-50">
+        <p className="text-base md:text-xl font-light text-neutral-50">
           Financial strategy and mentorship grounded in the Five Fs:
         </p>
-        <p className="text-xl text-neutral-50 font-bold">
+        <p className="text-base md:text-xl text-neutral-50 font-bold">
           Faith, Family, Finance, Fitness, and Fun
         </p>
       </div>
-      <div className="grid grid-cols-5 gap-x-2 px-1">
+      <div className="grid md:grid-cols-5 gap-y-2 md:gap-y-0 md:gap-x-2 px-1">
         {content.map((item, index) => (
           <div
             key={index}
