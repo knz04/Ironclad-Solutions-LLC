@@ -34,7 +34,7 @@ const team: Team[] = [
 
 function WhoWeAre() {
   return (
-    <div className="md:h-[70vh] bg-linear-to-b from-[#555759] to-neutral-900 ">
+    <div className="md:h-[65vh] bg-linear-to-b from-[#555759] to-neutral-900">
       <div className="flex flex-col justify-center items-center py-10">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           Who We Are
@@ -55,10 +55,10 @@ function WhoWeAre() {
                 backgroundImage: `url('${item.profile}')`,
               }}
             />
-            <p className="text-base md:text-xl font-light text-neutral-50 pt-2">
+            <p className="hover:text-[#2773a6] transition text-base md:text-xl font-light text-neutral-50 pt-2">
               {item.name}
             </p>
-            <div className="flex py-2">
+            <div className="flex py-2 gap-x-1">
               <Instagram color="#ffffff" />
               <Facebook color="#ffffff" />
             </div>
