@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function PrivacyPolicy() {
   return (
     <div className="bg-neutral-50 w-full ">
