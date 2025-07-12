@@ -7,6 +7,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import ScrollToTop from "./components/ScrollToTop";
+import Unsubscribe from "./pages/Unsubscribe";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<Schedule />} />
+        <Route path="/unsubscribe" element={<Unsubscribe />} />
 
         <Route
           path="*"
