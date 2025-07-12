@@ -8,7 +8,6 @@ function Unsubscribe() {
     e.preventDefault();
     const form = e.currentTarget;
 
-    // Cast the form elements
     const nameInput = form.elements.namedItem(
       "name"
     ) as HTMLInputElement | null;
@@ -23,7 +22,6 @@ function Unsubscribe() {
     const email = emailInput?.value.trim() || "";
     const phone = phoneInput?.value.trim() || "";
 
-    // Your validation here
     if (!name) {
       setError("Please enter your full name.");
       return;
@@ -53,7 +51,7 @@ function Unsubscribe() {
 
       <form
         method="POST"
-        action="mailto:info@ironclad" // replace with your actual endpoint
+        action="mailto:info@ironclad"
         onSubmit={handleSubmit}
         className="flex flex-col gap-4"
       >
