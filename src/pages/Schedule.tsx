@@ -75,6 +75,24 @@ function Schedule() {
                     {item.calendly}
                   </Link>
                 </p>
+                <p className="text-neutral-700 text-base sm:text-lg">
+                  iDecide:{" "}
+                  <Link
+                    to={item.idecide}
+                    className="hover:underline hover:text-[#2773a6]"
+                  >
+                    {item.idecide}
+                  </Link>
+                </p>
+                <p className="text-neutral-700 text-base sm:text-lg">
+                  My New Retirement:{" "}
+                  <Link
+                    to={item.mnr}
+                    className="hover:underline hover:text-[#2773a6]"
+                  >
+                    {item.mnr}
+                  </Link>
+                </p>
               </div>
             </div>
           ))}

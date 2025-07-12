@@ -9,6 +9,8 @@ interface Team {
   email: string;
   phone: string;
   calendly: string;
+  idecide: string;
+  mnr: string;
 }
 
 export const team: Team[] = [
@@ -17,7 +19,9 @@ export const team: Team[] = [
     name: "Sean Spengler",
     email: "sean.spengler@ira-a.org",
     phone: "954-830-1314",
-    calendly: "",
+    calendly: "https://calendly.com/sean-spengler/20-minute-agent-meet-greet",
+    idecide: "https://umustsee.net/ZFX6YF",
+    mnr: "https://umustsee.net/ZFX6YF",
   },
   {
     profile: augie,
@@ -25,6 +29,8 @@ export const team: Team[] = [
     email: "augie.bowdry@ira-a.org",
     phone: "415-794-2790",
     calendly: "",
+    idecide: "",
+    mnr: "",
   },
   {
     profile: andre,
@@ -32,6 +38,8 @@ export const team: Team[] = [
     email: "andre.scroggie@ira-a.org",
     phone: "305-912-6373",
     calendly: "https://calendly.com/andre-scroggie",
+    idecide: "https://umustsee.net/JMH7TR",
+    mnr: "https://andre-scroggie.mynewretirement.com/",
   },
 
   {
@@ -40,5 +48,7 @@ export const team: Team[] = [
     email: "kevin.caballero@ira-a.org",
     phone: "912-809-0459",
     calendly: "",
+    idecide: "",
+    mnr: "",
   },
 ];
