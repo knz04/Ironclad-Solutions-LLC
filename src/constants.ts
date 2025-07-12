@@ -31,7 +31,7 @@ export const team: Team[] = [
     name: "Augie Bowdry",
     email: "augie.bowdry@ira-a.org",
     phone: "415-794-2790",
-    calendly: "",
+    calendly: "https://calendly.com/andre-scroggie",
     idecide: "https://umustsee.net/JMH7TR",
     mnr: "https://andre-scroggie.mynewretirement.com/",
   },
