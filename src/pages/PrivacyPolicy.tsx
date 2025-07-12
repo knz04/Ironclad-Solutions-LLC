@@ -155,9 +155,9 @@ function PrivacyPolicy() {
                 Email:{" "}
                 <a
                   className="text-[#2773a6] underline"
-                  href="mailto:privacy@ironcladsolutionsfl.com"
+                  href="mailto:info@ironcladsolutionsfl.com"
                 >
-                  privacy@ironcladsolutionsfl.com
+                  info@ironcladsolutionsfl.com
                 </a>
               </li>
               <li>Mailing Address:</li>
