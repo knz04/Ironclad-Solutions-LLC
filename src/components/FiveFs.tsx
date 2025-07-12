@@ -29,9 +29,8 @@ const content: Content[] = [
   },
   {
     icon: SquarePen,
-    title: "Mortgage Strategy & Protection",
-    subtitle:
-      "Purchase, refinance, and mortgage protection—all aligned with a long-term financial vision.",
+    title: "Mortgage Protection",
+    subtitle: "Mortgage protection—aligned with a long-term financial vision.",
     button: "Explore Mortgage Services",
   },
   {
@@ -43,7 +42,7 @@ const content: Content[] = [
   },
   {
     icon: ChartBarIncreasing,
-    title: "Business Opportunity (GFI & AWM)",
+    title: "Business Opportunity",
     subtitle:
       "Join our platform and build a business that creates income, impact, and freedom.",
     button: "Explore the Opportunity",

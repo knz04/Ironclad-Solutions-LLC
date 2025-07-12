@@ -2,111 +2,94 @@ import { Link } from "react-router-dom";
 
 function Form() {
   return (
-    <form className="w-full max-w-2xl bg-white/90 p-8 shadow-xl z-10">
-      {" "}
-      <div className="flex flex-col gap-y-6">
-        <div className="flex flex-col md:flex-row md:gap-x-4">
-          <div className="flex flex-col flex-1 mb-4 md:mb-0">
-            <label
-              htmlFor="name"
-              className="font-semibold text-neutral-700 mb-1"
-            >
-              Name
-            </label>
-            <input
-              required
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your full name"
-              className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
-            />
-          </div>
-          <div className="flex flex-col flex-1">
-            <label
-              htmlFor="email"
-              className="font-semibold text-neutral-700 mb-1"
-            >
-              Email
-            </label>
-            <input
-              required
-              type="email"
-              id="email"
-              name="email"
-              placeholder="you@example.com"
-              className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
-            />
-          </div>
-        </div>
+    <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1">
+      <div className="flex flex-col text-center md:text-left">
+        <p className="text-lg font-semibold pb-4">
+          Stay Connected with Ironclad Solutions LLC
+        </p>
 
-        <div className="flex flex-col">
-          <label
-            htmlFor="phone"
-            className="font-semibold text-neutral-700 mb-1"
-          >
-            Phone (Optional)
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="e.g., +1 (555) 123-4567"
-            className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] transition-all duration-200"
-          />
-        </div>
+        <p className="text-lg font-light">
+          Fill out the form below to receive updates, promotions, and
+          opportunities from Ironclad Solutions LLC and our trusted partners.
+        </p>
+        <br />
+      </div>
 
-        <div className="flex flex-col">
-          <label
-            htmlFor="message"
-            className="font-semibold text-neutral-700 mb-1"
-          >
-            Message
-          </label>
-          <textarea
-            required
-            id="message"
-            name="message"
-            rows={5}
-            placeholder="Tell us how we can help you..."
-            className="border border-neutral-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#2773a6] resize-y transition-all duration-200"
-          ></textarea>
-        </div>
+      <form method="POST" action="/submit" className="flex flex-col gap-4">
+        <label htmlFor="name" className="text-neutral-800 font-medium text-lg">
+          Full Name:
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
+        />
 
-        <div className="flex items-start">
+        <label htmlFor="email" className="text-neutral-800 font-medium text-lg">
+          Email Address:
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
+        />
+
+        <label htmlFor="phone" className="text-neutral-800 font-medium text-lg">
+          Mobile Phone Number:
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
+        />
+
+        <label className="flex items-start text-neutral-700 text-sm md:text-base cursor-pointer mt-2">
           <input
             type="checkbox"
-            id="terms"
-            name="terms"
+            name="consent"
             required
-            className="mt-1 mr-2 h-5 w-5 text-[#2773a6] border-neutral-300  focus:ring-[#2773a6]"
+            className="mr-3 mt-1 accent-[#2773a6] transform scale-125"
           />
-          <label
-            htmlFor="terms"
-            className="text-sm text-neutral-600 cursor-pointer"
-          >
-            I agree to receive marketing and customer service calls and text
-            messages from Ironclad Solutions LLC. Consent is not a condition of
-            purchase. Msg/data rates may apply. Msg frequency varies. Reply STOP
-            to unsubscribe.{" "}
-            <Link
-              to="/privacy"
-              rel="noopener noreferrer"
-              className="text-[#2773a6] hover:underline"
-            >
-              Privacy Policy & Terms of Service
-            </Link>
-          </label>
-        </div>
+          I agree to receive marketing communications via phone call, text
+          message, and email from Ironclad Solutions LLC and its affiliates.
+          Message and data rates may apply. I understand that consent is not a
+          condition of purchase.
+        </label>
 
         <button
           type="submit"
-          className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer text-neutral-50 font-semibold py-3 px-8 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 self-center mt-4"
+          className="bg-[#2773a6] hover:bg-[#28679a] text-neutral-50 font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
         >
-          <p className="text-base">Send</p>
+          Submit
         </button>
-      </div>
-    </form>
+      </form>
+      <p className="text-xs sm:text-sm">
+        <br />
+        Ironclad Solutions LLC Alerts. Msg & data rates may apply. Reply STOP to
+        opt out.
+        <br />
+        <br />
+        You are receiving this message because you opted in to receive
+        communications from Ironclad Solutions LLC.
+        <br />
+        <Link to="/privacy" className="text-[#2773a6] hover:underline">
+          Privacy Policy
+        </Link>{" "}
+        |{" "}
+        <Link to="/unsubscribe" className="text-[#2773a6] hover:underline">
+          Unsubscribe
+        </Link>
+        <br />
+        <br />
+        Ironclad Solutions LLC, United States of America
+      </p>
+    </div>
   );
 }
 

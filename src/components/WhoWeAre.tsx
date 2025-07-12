@@ -1,4 +1,3 @@
-import { Facebook, Instagram } from "lucide-react";
 import { team } from "../constants";
 import { Link } from "react-router-dom";
 

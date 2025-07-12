@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import contact from "../assets/contact.png";
+import Form from "./Form";
 
 function Contact() {
   return (
-    <div className="relative flex flex-col md:min-h-[60vh] 2xl:min-h-[50vh] justify-center items-center py-12 px-4 bg-neutral-900 overflow-hidden">
+    <div className="relative flex flex-row md:min-h-[60vh] 2xl:min-h-[50vh] justify-evenly items-center py-12 px-4 bg-neutral-900 overflow-hidden">
       <div
-        className="absolute inset-0 z-0 grayscale opacity-15" // Removed 'top-90' and 'bf'
+        className="absolute inset-0 z-0 grayscale opacity-15"
         style={{
           backgroundImage: `url('${contact}')`,
           backgroundSize: "cover",
@@ -26,6 +27,7 @@ function Contact() {
           </Link>
         </button>
       </div>
+      <Form />
     </div>
   );
 }

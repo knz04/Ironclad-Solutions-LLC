@@ -15,9 +15,11 @@ function Hero() {
       <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#2773a6] opacity-50 z-0"></div>
       <h1 className="font-bold text-3xl md:text-8xl text-center text-neutral-50 z-10">
-        Build Wealth. <br />
-        Lead with Purpose. <br />
-        Live Fully Aligned.
+        Build Wealth
+        <br />
+        Lead with Purpose
+        <br />
+        Live Fully Aligned
       </h1>
       <p className="text-base md:text-xl text-center text-neutral-50 z-10">
         Financial guidance and business mentorship rooted in core values.
