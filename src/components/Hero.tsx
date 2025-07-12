@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero from "../assets/hero.png";
 
 function Hero() {
@@ -22,9 +23,12 @@ function Hero() {
         Financial guidance and business mentorship rooted in core values.
       </p>
       <button className="bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer mt-6 py-4 px-9 z-10 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115">
-        <p className="text-center text-base font-semibold text-neutral-50 ">
+        <Link
+          to="/contact"
+          className="text-center text-base font-semibold text-neutral-50 "
+        >
           Let's Connect
-        </p>
+        </Link>
       </button>
     </div>
   );
