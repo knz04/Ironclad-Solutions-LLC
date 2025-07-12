@@ -1,32 +1,5 @@
-import andre from "../assets/andre-scroggie.jpeg";
-import augie from "../assets/augie-bowdry.jpeg";
-import kevin from "../assets/kevin-caballero.jpeg";
-import sean from "../assets/sean-spengler.jpeg";
 import { Facebook, Instagram } from "lucide-react";
-
-interface Team {
-  profile: string;
-  name: string;
-}
-
-const team: Team[] = [
-  {
-    profile: sean,
-    name: "Sean Spengler",
-  },
-  {
-    profile: augie,
-    name: "Augie Bowdry",
-  },
-  {
-    profile: andre,
-    name: "André Scroggie",
-  },
-  {
-    profile: kevin,
-    name: "Kevin Caballero",
-  },
-];
+import { team } from "../constants";
 
 function WhoWeAre() {
   return (
