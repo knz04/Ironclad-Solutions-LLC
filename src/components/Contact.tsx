@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className="relative flex flex-row md:min-h-[60vh] 2xl:min-h-[50vh] justify-evenly items-center py-12 px-4 bg-neutral-900 overflow-hidden">
       <div
-        className="absolute inset-0 z-0 grayscale opacity-15"
+        className="absolute inset-0 z-0 grayscale opacity-15 bg-fixed"
         style={{
           backgroundImage: `url('${contact}')`,
           backgroundSize: "cover",
