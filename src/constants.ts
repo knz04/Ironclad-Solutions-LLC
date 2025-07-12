@@ -32,8 +32,8 @@ export const team: Team[] = [
     email: "augie.bowdry@ira-a.org",
     phone: "415-794-2790",
     calendly: "",
-    idecide: "",
-    mnr: "",
+    idecide: "https://umustsee.net/JMH7TR",
+    mnr: "https://andre-scroggie.mynewretirement.com/",
   },
   {
     id: "andre-scroggie",
@@ -54,6 +54,6 @@ export const team: Team[] = [
     calendly:
       "https://calendly.com/kevin-caballero-ira-a/financial-protection-planning-session",
     idecide: "https://umustsee.net/WHH1AV",
-    mnr: "",
+    mnr: "https://andre-scroggie.mynewretirement.com/",
   },
 ];
