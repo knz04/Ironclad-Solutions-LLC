@@ -51,8 +51,9 @@ export const team: Team[] = [
     name: "Kevin Caballero",
     email: "kevin.caballero@ira-a.org",
     phone: "912-809-0459",
-    calendly: "",
-    idecide: "",
+    calendly:
+      "https://calendly.com/kevin-caballero-ira-a/financial-protection-planning-session",
+    idecide: "https://umustsee.net/WHH1AV",
     mnr: "",
   },
 ];
