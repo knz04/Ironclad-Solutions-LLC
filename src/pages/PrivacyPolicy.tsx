@@ -116,9 +116,9 @@ function PrivacyPolicy() {
               To opt out or submit a request, contact:{" "}
               <a
                 className="text-[#2773a6] underline"
-                href="mailto:privacy@ironcladsolutionsfl.com"
+                href="mailto:info@ironcladsolutionsfl.com"
               >
-                privacy@ironcladsolutionsfl.com
+                info@ironcladsolutionsfl.com
               </a>
             </p>
 
