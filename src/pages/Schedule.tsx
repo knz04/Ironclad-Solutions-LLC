@@ -48,13 +48,36 @@ function Schedule() {
               />
 
               <div
-                id={item.name.replace(/\s+/g, "-").toLowerCase()}
+                id={item.id}
                 className="flex flex-col text-center sm:text-left"
               >
                 <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#2773a6] mb-1">
                   {item.name}
                 </p>
                 <p className="text-neutral-700 text-base sm:text-lg">
+                  Take the first step toward financial independence{" "}
+                </p>
+                <Link
+                  to={item.idecide}
+                  className="hover:underline text-[#2773a6]"
+                >
+                  —[click here to watch our interactive presentation]!
+                </Link>
+
+                <p className="text-neutral-700 text-base sm:text-lg mt-4">
+                  Protect your retirement and lower your taxes{" "}
+                </p>
+                <Link to={item.mnr} className="hover:underline text-[#2773a6]">
+                  —[click here to find out how]!
+                </Link>
+                <Link
+                  to={item.calendly}
+                  className="hover:underline text-[#2773a6]"
+                >
+                  —[schedule a time with us today]!
+                </Link>
+
+                <p className="text-neutral-700 text-base sm:text-lg mt-4">
                   Email:{" "}
                   <Link
                     to={`mailto:${item.email}`}
@@ -65,33 +88,6 @@ function Schedule() {
                 </p>
                 <p className="text-neutral-700 text-base sm:text-lg">
                   Phone: {item.phone}
-                </p>
-                <p className="text-neutral-700 text-base sm:text-lg">
-                  Calendly:{" "}
-                  <Link
-                    to={item.calendly}
-                    className="hover:underline hover:text-[#2773a6]"
-                  >
-                    {item.calendly}
-                  </Link>
-                </p>
-                <p className="text-neutral-700 text-base sm:text-lg">
-                  iDecide:{" "}
-                  <Link
-                    to={item.idecide}
-                    className="hover:underline hover:text-[#2773a6]"
-                  >
-                    {item.idecide}
-                  </Link>
-                </p>
-                <p className="text-neutral-700 text-base sm:text-lg">
-                  My New Retirement:{" "}
-                  <Link
-                    to={item.mnr}
-                    className="hover:underline hover:text-[#2773a6]"
-                  >
-                    {item.mnr}
-                  </Link>
                 </p>
               </div>
             </div>

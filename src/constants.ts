@@ -4,6 +4,7 @@ import kevin from "./assets/kevin-caballero.jpeg";
 import sean from "./assets/sean-spengler.jpeg";
 
 interface Team {
+  id: string;
   profile: string;
   name: string;
   email: string;
@@ -15,6 +16,7 @@ interface Team {
 
 export const team: Team[] = [
   {
+    id: "sean-spengler",
     profile: sean,
     name: "Sean Spengler",
     email: "sean.spengler@ira-a.org",
@@ -24,6 +26,7 @@ export const team: Team[] = [
     mnr: "https://umustsee.net/ZFX6YF",
   },
   {
+    id: "augie-bowdry",
     profile: augie,
     name: "Augie Bowdry",
     email: "augie.bowdry@ira-a.org",
@@ -33,6 +36,7 @@ export const team: Team[] = [
     mnr: "",
   },
   {
+    id: "andre-scroggie",
     profile: andre,
     name: "André Scroggie",
     email: "andre.scroggie@ira-a.org",
@@ -41,8 +45,8 @@ export const team: Team[] = [
     idecide: "https://umustsee.net/JMH7TR",
     mnr: "https://andre-scroggie.mynewretirement.com/",
   },
-
   {
+    id: "kevin-caballero",
     profile: kevin,
     name: "Kevin Caballero",
     email: "kevin.caballero@ira-a.org",
