@@ -1,5 +1,3 @@
-import { Facebook, Instagram } from "lucide-react";
-import equal from "../assets/equal-housing-logo.webp";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
