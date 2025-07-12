@@ -160,7 +160,12 @@ function PrivacyPolicy() {
                   privacy@ironcladsolutionsfl.com
                 </a>
               </li>
-              <li>Mailing Address: United States of America</li>
+              <li>Mailing Address:</li>
+              <p>
+                6272 Harbor Bnd
+                <br />
+                Margate, FL 33063
+              </p>
             </ul>
 
             <p className="mt-4 leading-relaxed">
