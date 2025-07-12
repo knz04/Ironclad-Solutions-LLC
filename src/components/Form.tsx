@@ -57,9 +57,8 @@ function Form() {
             className="mr-3 mt-1 accent-[#2773a6] transform scale-125"
           />
           I agree to receive marketing communications via phone call, text
-          message, and email from IronClad Solutions LLC and its affiliates.
-          Message and data rates may apply. I understand that consent is not a
-          condition of purchase.
+          message, and email from IronClad Solutions LLC and its affiliates. I
+          understand that consent is not a condition of purchase.
         </label>
 
         <button
