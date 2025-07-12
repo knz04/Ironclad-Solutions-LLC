@@ -1,5 +1,6 @@
 import { Facebook, Instagram } from "lucide-react";
 import { team } from "../constants";
+import { Link } from "react-router-dom";
 
 function WhoWeAre() {
   return (
@@ -18,19 +19,20 @@ function WhoWeAre() {
             key={index}
             className="flex flex-col justify-center items-center"
           >
-            <div
-              className={`w-56 h-56 md:w-60 md:h-60 rounded-full mb-4 bg-cover bg-center bg-no-repeat shadow-2xl`}
-              style={{
-                backgroundImage: `url('${item.profile}')`,
-              }}
-            />
-            <p className="hover:text-[#2773a6] transition text-base md:text-xl font-light text-neutral-50 pt-2">
+            <Link to="/contact">
+              <div
+                className={`w-56 h-56 md:w-60 md:h-60 rounded-full mb-4 bg-cover bg-center bg-no-repeat shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-115`}
+                style={{
+                  backgroundImage: `url('${item.profile}')`,
+                }}
+              />
+            </Link>
+            <Link
+              to="/contact"
+              className="hover:text-[#2773a6] hover:underline transition text-base md:text-xl font-light text-neutral-50 pt-2"
+            >
               {item.name}
-            </p>
-            <div className="flex py-2 gap-x-1">
-              <Instagram color="#ffffff" />
-              <Facebook color="#ffffff" />
-            </div>
+            </Link>
           </div>
         ))}
       </div>
