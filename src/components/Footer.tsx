@@ -45,29 +45,7 @@ function Footer() {
             <p>example@email.com</p>
           </div>
         </div>
-        <div className="flex flex-col items-center md:items-end text-center md:text-right flex-1 min-w-[180px]">
-          <div className="flex gap-x-4 mb-4">
-            {" "}
-            <a href="#" aria-label="Facebook">
-              <Facebook
-                color="#ffffff"
-                size={24}
-                className="hover:text-[#2773a6] transition-colors"
-              />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <Instagram
-                color="#ffffff"
-                size={24}
-                className="hover:text-[#2773a6] transition-colors"
-              />
-            </a>
-          </div>
-          <img
-            src={equal}
-            alt="Equal Housing Opportunity Logo"
-            className="h-12 w-auto mb-4"
-          />{" "}
+        <div className="flex flex-col items-center md:text-right flex-1 min-w-[180px]">
           <p className="text-sm text-neutral-400">
             COPYRIGHT © {new Date().getFullYear()}. All Rights Reserved.
           </p>

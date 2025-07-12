@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PrivacyPolicy() {
   return (
     <div className="bg-neutral-50 w-full ">
@@ -19,17 +21,7 @@ function PrivacyPolicy() {
           <p className="mb-8 leading-relaxed">
             We use Your Personal data to provide and improve the Service. By
             using the Service, You agree to the collection and use of
-            information in accordance with this Privacy Policy. This Privacy
-            Policy has been created with the help of the{" "}
-            <a
-              href="https://www.termsfeed.com/privacy-policy-generator/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              Privacy Policy Generator
-            </a>
-            .
+            information in accordance with this Privacy Policy.
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-neutral-900">
@@ -127,14 +119,14 @@ function PrivacyPolicy() {
               <p>
                 <strong>Website</strong> refers to Ironclad Solutions LLC,
                 accessible from{" "}
-                <a
-                  href="https://ironcladsolutions.com"
+                <Link
+                  to="https://ironcladsolutionsfl.com"
                   rel="external nofollow noopener"
                   target="_blank"
                   className="text-blue-600 hover:underline"
                 >
                   ironcladsolutions.com
-                </a>
+                </Link>
               </p>
             </li>
             <li>
