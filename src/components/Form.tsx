@@ -71,10 +71,6 @@ function Form() {
       </form>
       <p className="text-xs sm:text-sm">
         <br />
-        IronClad Solutions LLC Alerts. Msg & data rates may apply. Reply STOP to
-        opt out.
-        <br />
-        <br />
         You are receiving this message because you opted in to receive
         communications from IronClad Solutions LLC.
         <br />

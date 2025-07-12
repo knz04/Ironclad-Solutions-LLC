@@ -23,7 +23,7 @@ export const team: Team[] = [
     phone: "954-830-1314",
     calendly: "https://calendly.com/sean-spengler/20-minute-agent-meet-greet",
     idecide: "https://umustsee.net/ZFX6YF",
-    mnr: "https://umustsee.net/ZFX6YF",
+    mnr: "https://ira-a.mynewretirement.com/",
   },
   {
     id: "augie-bowdry",

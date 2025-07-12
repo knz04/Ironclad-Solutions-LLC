@@ -59,6 +59,7 @@ function Schedule() {
                 </p>
                 <Link
                   to={item.idecide}
+                  target="_blank"
                   className="hover:underline text-[#2773a6]"
                 >
                   —[click here to watch our interactive presentation]!
@@ -67,11 +68,16 @@ function Schedule() {
                 <p className="text-neutral-700 text-base sm:text-lg mt-4">
                   Protect your retirement and lower your taxes{" "}
                 </p>
-                <Link to={item.mnr} className="hover:underline text-[#2773a6]">
+                <Link
+                  to={item.mnr}
+                  target="_blank"
+                  className="hover:underline text-[#2773a6]"
+                >
                   —[click here to find out how]!
                 </Link>
                 <Link
                   to={item.calendly}
+                  target="_blank"
                   className="hover:underline text-[#2773a6]"
                 >
                   —[schedule a time with us today]!
