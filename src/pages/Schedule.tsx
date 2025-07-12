@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import schedule from "../assets/schedule.webp";
 import { team } from "../constants";
 
@@ -13,7 +14,7 @@ function Schedule() {
       <div className="absolute inset-0 bg-black opacity-60 z-0"></div>{" "}
       <div className="relative z-10 flex flex-col justify-center items-center py-10 px-4 h-full">
         <p className="text-4xl sm:text-5xl md:text-6xl text-neutral-50 py-4 font-bold text-center leading-tight">
-          Schedule a Meeting
+          Contact Us
         </p>
         <p className="text-base md:text-xl font-light text-neutral-50">
           Schedule a meeting with out dedicated professionals.
@@ -23,6 +24,7 @@ function Schedule() {
           {team.map((item, index) => (
             <div
               key={index}
+              id={`${item.name}`}
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 py-6 border-b border-neutral-200 last:border-b-0"
             >
               <div
@@ -37,10 +39,25 @@ function Schedule() {
                   {item.name}
                 </p>
                 <p className="text-neutral-700 text-base sm:text-lg">
-                  Email: {item.email}
+                  Email:{" "}
+                  <Link
+                    to={`mailto:${item.email}`}
+                    className="hover:underline hover:text-[#2773a6]"
+                  >
+                    {item.email}
+                  </Link>
                 </p>
                 <p className="text-neutral-700 text-base sm:text-lg">
                   Phone: {item.phone}
+                </p>
+                <p className="text-neutral-700 text-base sm:text-lg">
+                  Calendly:{" "}
+                  <Link
+                    to={item.calendly}
+                    className="hover:underline hover:text-[#2773a6]"
+                  >
+                    {item.calendly}
+                  </Link>
                 </p>
               </div>
             </div>

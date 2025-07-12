@@ -2,14 +2,14 @@ function PrivacyPolicy() {
   return (
     <div className="bg-neutral-50 w-full ">
       <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%] max-w-4xl mx-auto py-12 md:py-16">
-        <h1 className="font-bold">Privacy Policy for Ironclad Solutions LLC</h1>
+        <h1 className="font-bold">Privacy Policy for IronClad Solutions LLC</h1>
 
         <div className="flex flex-col gap-y-6 md:gap-y-8">
           <p className="text-sm text-neutral-600 leading-relaxed mb-2">
             <strong>Effective Date:</strong> 07/01/2025
           </p>
           <p className="mb-4 leading-relaxed">
-            Welcome to Ironclad Solutions LCC. We are committed to protecting
+            Welcome to IronClad Solutions LCC. We are committed to protecting
             the privacy of our users. This Privacy Policy outlines how we
             collect, user, and safeguard your information.
           </p>
@@ -50,7 +50,7 @@ function PrivacyPolicy() {
               <li>Providing updates on our initiatives and programs</li>
             </ul>
             <p className="mt-2 leading-relaxed">
-              Your personal information is used exclusively within Ironclad
+              Your personal information is used exclusively within IronClad
               Solutions LLC and is not shared with third parties outside of our
               network of advocates. No mobile information will be shared with
               third parties/affiliates for marketing/promotional purposes. All
@@ -100,7 +100,7 @@ function PrivacyPolicy() {
               personal information or this Privacy Policy, please contact:
             </p>
             <ul>
-              <li>Ironclad Solutions LLC Privacy Team</li>
+              <li>IronClad Solutions LLC Privacy Team</li>
               <li>Email: privacy@ironcladsolutionsfl.com</li>
               <li>Address: United States of America</li>
             </ul>
@@ -120,7 +120,7 @@ function PrivacyPolicy() {
               about how we are protecting your information.
             </p>
             <p className="mt-2 leading-relaxed">
-              Thank you for supporting Ironclad Solutions LLC and our mission of
+              Thank you for supporting IronClad Solutions LLC and our mission of
               income replacement advocacy.
             </p>
           </ol>

@@ -5,12 +5,12 @@ function Form() {
     <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1">
       <div className="flex flex-col text-center md:text-left">
         <p className="text-lg font-semibold pb-4">
-          Stay Connected with Ironclad Solutions LLC
+          Stay Connected with IronClad Solutions LLC
         </p>
 
         <p className="text-lg font-light">
           Fill out the form below to receive updates, promotions, and
-          opportunities from Ironclad Solutions LLC and our trusted partners.
+          opportunities from IronClad Solutions LLC and our trusted partners.
         </p>
         <br />
       </div>
@@ -57,7 +57,7 @@ function Form() {
             className="mr-3 mt-1 accent-[#2773a6] transform scale-125"
           />
           I agree to receive marketing communications via phone call, text
-          message, and email from Ironclad Solutions LLC and its affiliates.
+          message, and email from IronClad Solutions LLC and its affiliates.
           Message and data rates may apply. I understand that consent is not a
           condition of purchase.
         </label>
@@ -71,12 +71,12 @@ function Form() {
       </form>
       <p className="text-xs sm:text-sm">
         <br />
-        Ironclad Solutions LLC Alerts. Msg & data rates may apply. Reply STOP to
+        IronClad Solutions LLC Alerts. Msg & data rates may apply. Reply STOP to
         opt out.
         <br />
         <br />
         You are receiving this message because you opted in to receive
-        communications from Ironclad Solutions LLC.
+        communications from IronClad Solutions LLC.
         <br />
         <Link to="/privacy" className="text-[#2773a6] hover:underline">
           Privacy Policy
@@ -87,7 +87,7 @@ function Form() {
         </Link>
         <br />
         <br />
-        Ironclad Solutions LLC, United States of America
+        IronClad Solutions LLC, United States of America
       </p>
     </div>
   );

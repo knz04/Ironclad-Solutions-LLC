@@ -18,7 +18,7 @@ function Footer() {
           </div>
           <p className="text-sm leading-relaxed text-neutral-400 max-w-md">
             {" "}
-            Ironclad Solutions LLC is a licensed representative of various life
+            IronClad Solutions LLC is a licensed representative of various life
             insurance and financial service providers. All strategies are for
             educational purposes and do not constitute financial advice.
             Licensing and availability vary by state.

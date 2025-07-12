@@ -8,32 +8,37 @@ interface Team {
   name: string;
   email: string;
   phone: string;
+  calendly: string;
 }
 
 export const team: Team[] = [
   {
     profile: sean,
     name: "Sean Spengler",
-    email: "",
-    phone: "",
+    email: "sean.spengler@ira-a.org",
+    phone: "954-830-1314",
+    calendly: "",
   },
   {
     profile: augie,
     name: "Augie Bowdry",
-    email: "",
-    phone: "",
+    email: "augie.bowdry@ira-a.org",
+    phone: "415-794-2790",
+    calendly: "",
   },
   {
     profile: andre,
     name: "André Scroggie",
-    email: "",
-    phone: "",
+    email: "andre.scroggie@ira-a.org",
+    phone: "305-912-6373",
+    calendly: "https://calendly.com/andre-scroggie",
   },
 
   {
     profile: kevin,
     name: "Kevin Caballero",
-    email: "",
-    phone: "",
+    email: "kevin.caballero@ira-a.org",
+    phone: "912-809-0459",
+    calendly: "",
   },
 ];
