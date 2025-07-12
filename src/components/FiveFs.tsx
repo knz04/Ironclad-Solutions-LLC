@@ -29,7 +29,7 @@ const content: Content[] = [
     title: "Tax-Advantaged Money Growth",
     subtitle: "Risk-free, long-term wealth strategies using indexed products.",
     button: "Learn More",
-    link: "#",
+    link: "https://umustsee.net/FEJ8DE",
   },
   {
     icon: SquarePen,
