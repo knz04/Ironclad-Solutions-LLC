@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import schedule from "../assets/schedule.webp";
+import schedule from "../assets/schedule.jpeg";
 import { team } from "../constants";
 
 function Schedule() {

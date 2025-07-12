@@ -6,12 +6,14 @@ import {
   SquarePen,
 } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Content {
   icon: React.ElementType;
   title: string;
   subtitle: string;
   button: string;
+  link: string;
 }
 
 const content: Content[] = [
@@ -20,18 +22,21 @@ const content: Content[] = [
     title: "Life Insurance & Protection",
     subtitle: "Income replacement, living benefits, and legacy strategies.",
     button: "Explore Life Insurance",
+    link: "#",
   },
   {
     icon: BanknoteArrowUp,
     title: "Tax-Advantaged Money Growth",
     subtitle: "Risk-free, long-term wealth strategies using indexed products.",
     button: "Learn More",
+    link: "#",
   },
   {
     icon: SquarePen,
     title: "Mortgage Protection",
     subtitle: "Mortgage protection—aligned with a long-term financial vision.",
     button: "Explore Mortgage Services",
+    link: "#",
   },
   {
     icon: Handshake,
@@ -39,6 +44,7 @@ const content: Content[] = [
     subtitle:
       "Guidance for people seeking purpose-aligned growth in business and life.",
     button: "Discover Mentorship",
+    link: "https://umustsee.net/NDF3OC",
   },
   {
     icon: ChartBarIncreasing,
@@ -46,6 +52,7 @@ const content: Content[] = [
     subtitle:
       "Join our platform and build a business that creates income, impact, and freedom.",
     button: "Explore the Opportunity",
+    link: "https://umustsee.net/NDF3OC",
   },
 ];
 
@@ -78,10 +85,13 @@ function FiveFs() {
             <p className="text-md md:text-lg text-center text-neutral-50 px-4 py-3">
               {item.subtitle}
             </p>
+
             <button className="bg-neutral-50 py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-              <p className="text-sm text-center italic text-[#2773a6]">
-                → {item.button}
-              </p>
+              <Link to="https://umustsee.net/NDF3OC" target="_blank">
+                <p className="text-sm text-center italic text-[#2773a6]">
+                  → {item.button}
+                </p>
+              </Link>
             </button>
           </div>
         ))}

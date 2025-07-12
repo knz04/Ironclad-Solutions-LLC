@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import contact from "../assets/contact.png";
+import contact from "../assets/contact.jpeg";
 import Form from "./Form";
 
 function Contact() {
