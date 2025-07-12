@@ -1,8 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import schedule from "../assets/schedule.jpeg";
 import { team } from "../constants";
+import { useEffect } from "react";
 
 function Schedule() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="relative min-h-[90vh] bg-neutral-900 overflow-hidden font-inter">
       <div
@@ -24,7 +37,6 @@ function Schedule() {
           {team.map((item, index) => (
             <div
               key={index}
-              id={`${item.name}`}
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 py-6 border-b border-neutral-200 last:border-b-0"
             >
               <div
@@ -34,7 +46,10 @@ function Schedule() {
                 }}
               />
 
-              <div className="flex flex-col text-center sm:text-left">
+              <div
+                id={item.name.replace(/\s+/g, "-").toLowerCase()}
+                className="flex flex-col text-center sm:text-left"
+              >
                 <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#2773a6] mb-1">
                   {item.name}
                 </p>

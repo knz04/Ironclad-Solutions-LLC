@@ -18,7 +18,9 @@ function WhoWeAre() {
             key={index}
             className="flex flex-col justify-center items-center"
           >
-            <Link to="/contact">
+            <Link
+              to={`/contact#${item.name.replace(/\s+/g, "-").toLowerCase()}`}
+            >
               <div
                 className={`w-56 h-56 md:w-60 md:h-60 rounded-full mb-4 bg-cover bg-center bg-no-repeat shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-115`}
                 style={{
@@ -27,7 +29,7 @@ function WhoWeAre() {
               />
             </Link>
             <Link
-              to="/contact"
+              to={`/contact#${item.name.replace(/\s+/g, "-").toLowerCase()}`}
               className="hover:text-[#2773a6] hover:underline transition text-base md:text-xl font-light text-neutral-50 pt-2"
             >
               {item.name}
