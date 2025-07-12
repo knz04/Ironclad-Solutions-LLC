@@ -21,8 +21,8 @@ function Contact() {
           Reach out to us, we're happy to help.
         </p>
         <button className="justify-items-center bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer mt-6 py-4 px-4 z-1 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115">
-          <Link to="/schedule" className="text-neutral-50">
-            Schedule a Meeting
+          <Link to="/contact" className="text-neutral-50">
+            Contact Us
           </Link>
         </button>
       </div>

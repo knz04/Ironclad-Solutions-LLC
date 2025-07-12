@@ -44,7 +44,7 @@ function Navbar() {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li className="hover:underline hover:underline-offset-8 font-light">
-                <NavLink to="/schedule">Schedule a Meeting</NavLink>
+                <NavLink to="/contact">Contact Us</NavLink>
               </li>
             </ul>
           </nav>
@@ -59,8 +59,8 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
-                <NavLink to="/schedule" onClick={toggleMenu}>
-                  Schedule a Meeting
+                <NavLink to="/contact" onClick={toggleMenu}>
+                  Contact Us
                 </NavLink>
               </li>
             </ul>

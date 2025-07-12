@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,23 +8,13 @@ function Footer() {
         {" "}
         <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1 min-w-[280px]">
           <div className="flex flex-row gap-x-6 mb-4">
-            {" "}
-            <p className="text-lg font-bold text-neutral-50 mb-2 md:mb-0">
-              <NavLink
-                to="/schedule"
-                rel="noopener noreferrer"
-                className="text-neutral-50 hover:underline text-lg font-bold"
-              >
-                Get in Touch
-              </NavLink>
-            </p>
-            <NavLink
+            <Link
               to="/privacy"
               rel="noopener noreferrer"
               className="text-neutral-50 hover:underline text-lg font-bold"
             >
               Privacy Policy
-            </NavLink>
+            </Link>
           </div>
           <p className="text-sm leading-relaxed text-neutral-400 max-w-md">
             {" "}
@@ -35,13 +25,12 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1 min-w-[200px]">
-          <p className="text-lg font-bold text-neutral-50 mb-4">Contact Us</p>
-          <div className="flex flex-col gap-y-2 text-neutral-400 text-sm">
-            {" "}
-            <p>Some address in the United States</p>
-            <p>+1 234-5678</p>
-            <p>example@email.com</p>
-          </div>
+          <Link
+            to="/contact"
+            className="text-lg font-bold hover:underline text-neutral-50 mb-4"
+          >
+            Contact Us
+          </Link>
         </div>
         <div className="flex flex-col items-center md:text-right flex-1 min-w-[180px]">
           <p className="text-sm text-neutral-400">
