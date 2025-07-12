@@ -21,7 +21,7 @@ function Footer() {
               </NavLink>
             </p>
             <NavLink
-              to="/privacy-policy"
+              to="/privacy"
               rel="noopener noreferrer"
               className="text-neutral-50 hover:underline text-lg font-bold"
             >

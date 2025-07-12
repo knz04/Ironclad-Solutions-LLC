@@ -90,7 +90,7 @@ function Form() {
             purchase. Msg/data rates may apply. Msg frequency varies. Reply STOP
             to unsubscribe.{" "}
             <Link
-              to="/privacy-policy"
+              to="/privacy"
               rel="noopener noreferrer"
               className="text-[#2773a6] hover:underline"
             >
