@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import schedule from "../assets/schedule.jpeg";
 import { team } from "../constants";
 import { useEffect } from "react";
+import Form from "../components/Form";
 
 function Schedule() {
   const location = useLocation();
@@ -77,6 +78,9 @@ function Schedule() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-12 w-[100%]">
+          <Form />
         </div>
       </div>
     </div>
