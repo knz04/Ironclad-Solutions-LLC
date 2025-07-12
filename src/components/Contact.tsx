@@ -21,11 +21,12 @@ function Contact() {
         <p className="text-base md:text-xl font-light text-center text-neutral-50 z-1">
           Reach out to us, we're happy to help.
         </p>
-        <button className="justify-items-center bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer mt-6 py-4 px-4 z-1 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115">
-          <Link to="/contact" className="text-neutral-50">
-            Contact Us
-          </Link>
-        </button>
+        <Link
+          to="/contact"
+          className="text-neutral-50 text-center justify-items-center bg-[#2773a6] hover:bg-[#28679a] hover:cursor-pointer mt-6 py-4 px-4 z-1 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115"
+        >
+          Contact Us
+        </Link>
       </div>
       <Form />
     </div>
