@@ -5,7 +5,11 @@ function PrivacyPolicy() {
     if (typeof window !== "undefined") {
       const hostname = window.location.hostname;
 
-      if (hostname === "icsfsfl.com" || hostname === "www.icsfsfl.com") {
+      if (
+        hostname === "icsfsfl.com" ||
+        hostname === "www.icsfsfl.com" ||
+        hostname === "https://www.icsfsfl.com/"
+      ) {
         return "info@icsfsfl.com";
       } else {
         return "info@ironcladsolutionsfltest.com";
@@ -133,7 +137,7 @@ function PrivacyPolicy() {
                 className="text-[#2773a6] underline"
                 to={`mailto:${currentContactEmail}`}
               >
-                info@ironcladsolutionsfl.com
+                {currentContactEmail}
               </Link>
             </p>
 
@@ -172,7 +176,7 @@ function PrivacyPolicy() {
                   className="text-[#2773a6] underline"
                   to={`mailto:${currentContactEmail}`}
                 >
-                  info@ironcladsolutionsfl.com
+                  {currentContactEmail}
                 </Link>
               </li>
               <li>Mailing Address:</li>
