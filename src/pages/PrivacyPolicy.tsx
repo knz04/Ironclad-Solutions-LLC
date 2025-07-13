@@ -1,4 +1,19 @@
+import { Link } from "react-router-dom";
+
 function PrivacyPolicy() {
+  const getEmail = () => {
+    if (typeof window !== "undefined") {
+      const hostname = window.location.hostname;
+
+      if (hostname === "icsfsfl.com" || hostname === "www.icsfsfl.com") {
+        return "info@icsfsfl.com";
+      } else {
+        return "info@ironcladsolutionsfl.com";
+      }
+    }
+  };
+  const currentContactEmail = getEmail();
+
   return (
     <div className="bg-neutral-50 w-full ">
       <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%] max-w-4xl mx-auto py-12 md:py-16">
@@ -114,12 +129,12 @@ function PrivacyPolicy() {
             </ul>
             <p className="mt-2 leading-relaxed">
               To opt out or submit a request, contact:{" "}
-              <a
+              <Link
                 className="text-[#2773a6] underline"
-                href="mailto:info@ironcladsolutionsfl.com"
+                to={`mailto:${currentContactEmail}`}
               >
                 info@ironcladsolutionsfl.com
-              </a>
+              </Link>
             </p>
 
             {/* 5. Data Protection */}
@@ -153,12 +168,12 @@ function PrivacyPolicy() {
               <li>Ironclad Solutions LLC – Privacy Team</li>
               <li>
                 Email:{" "}
-                <a
+                <Link
                   className="text-[#2773a6] underline"
-                  href="mailto:info@ironcladsolutionsfl.com"
+                  to={`mailto:${currentContactEmail}`}
                 >
                   info@ironcladsolutionsfl.com
-                </a>
+                </Link>
               </li>
               <li>Mailing Address:</li>
               <p>
