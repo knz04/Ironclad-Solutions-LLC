@@ -23,7 +23,7 @@ export const team: Team[] = [
     phone: "954-830-1314",
     calendly: "https://calendly.com/sean-spengler/20-minute-agent-meet-greet",
     idecide: "https://umustsee.net/ZFX6YF",
-    mnr: "https://ira-a.mynewretirement.com/",
+    mnr: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
   },
   {
     id: "augie-bowdry",
@@ -54,6 +54,6 @@ export const team: Team[] = [
     calendly:
       "https://calendly.com/kevin-caballero-ira-a/financial-protection-planning-session",
     idecide: "https://umustsee.net/WHH1AV",
-    mnr: "https://andre-scroggie.mynewretirement.com/",
+    mnr: "https://kevin-caballero.mynewretirement.com/",
   },
 ];

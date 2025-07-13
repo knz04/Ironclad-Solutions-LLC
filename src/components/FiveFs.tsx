@@ -22,14 +22,14 @@ const content: Content[] = [
     title: "Life Insurance & Protection",
     subtitle: "Income replacement, living benefits, and legacy strategies.",
     button: "Explore Life Insurance",
-    link: "#",
+    link: "https://assets.corebridgefinancial.com/s7viewers/html5/VideoViewer.html?asset=aigdynamicmedia/chris-edwards-testimonial-cbf-AVS&config=aigdynamicmedia/Video",
   },
   {
     icon: BanknoteArrowUp,
     title: "Tax-Advantaged Money Growth",
     subtitle: "Risk-free, long-term wealth strategies using indexed products.",
     button: "Learn More",
-    link: "https://umustsee.net/RHC2OP",
+    link: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
   },
   {
     icon: SquarePen,
@@ -87,7 +87,7 @@ function FiveFs() {
             </p>
 
             <button className="bg-neutral-50 py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-              <Link to="https://umustsee.net/NDF3OC" target="_blank">
+              <Link to={item.link} target="_blank">
                 <p className="text-sm text-center italic text-[#2773a6]">
                   → {item.button}
                 </p>
