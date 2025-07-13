@@ -1,6 +1,63 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import type { FormEvent } from "react";
 
 function Form() {
+  const getKey = () => {
+    if (typeof window !== "undefined") {
+      const hostname = window.location.hostname;
+
+      if (
+        hostname === "icsfsfl.com" ||
+        hostname === "www.icsfsfl.com" ||
+        hostname === "https://www.icsfsfl.com/"
+      ) {
+        return "info@icsfsfl.com";
+      } else {
+        return "info@ironcladsolutionsfl.com";
+      }
+    }
+  };
+
+  const CURRENT_ACCESS_KEY = getKey();
+  const [result, setResult] = useState<string>("");
+
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("Sending....");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const subject = `New Subscription: ${name} subscribed to updates from IronClad Solutions LLC.`;
+    formData.append("subject", subject);
+
+    formData.append(
+      "access_key",
+      CURRENT_ACCESS_KEY ?? "aecdc1f5-92d0-414c-b8ee-df48576fc611"
+    );
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data: { success: boolean; message: string } = await response.json();
+
+      if (data.success) {
+        setResult("Subscribed successfully.");
+        form.reset();
+      } else {
+        console.error("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Fetch error", error);
+      setResult("An unexpected error occurred.");
+    }
+  };
+
   return (
     <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1">
       <div className="flex flex-col text-center md:text-left">
@@ -15,7 +72,7 @@ function Form() {
         <br />
       </div>
 
-      <form method="POST" action="/submit" className="flex flex-col gap-4">
+      <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <label htmlFor="name" className="text-neutral-800 font-medium text-lg">
           Full Name:
         </label>
@@ -67,6 +124,7 @@ function Form() {
         >
           Submit
         </button>
+        {result}
       </form>
       <p className="text-xs sm:text-sm">
         <br />

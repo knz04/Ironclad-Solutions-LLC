@@ -1,38 +1,61 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import type { FormEvent } from "react";
 
 function Unsubscribe() {
-  const [error, setError] = useState("");
+  const getKey = () => {
+    if (typeof window !== "undefined") {
+      const hostname = window.location.hostname;
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-
-    const nameInput = form.elements.namedItem(
-      "name"
-    ) as HTMLInputElement | null;
-    const emailInput = form.elements.namedItem(
-      "email"
-    ) as HTMLInputElement | null;
-    const phoneInput = form.elements.namedItem(
-      "phone"
-    ) as HTMLInputElement | null;
-
-    const name = nameInput?.value.trim() || "";
-    const email = emailInput?.value.trim() || "";
-    const phone = phoneInput?.value.trim() || "";
-
-    if (!name) {
-      setError("Please enter your full name.");
-      return;
+      if (
+        hostname === "icsfsfl.com" ||
+        hostname === "www.icsfsfl.com" ||
+        hostname === "https://www.icsfsfl.com/"
+      ) {
+        return "info@icsfsfl.com";
+      } else {
+        return "info@ironcladsolutionsfl.com";
+      }
     }
-    if (!email && !phone) {
-      setError("Please enter either your email address or phone number.");
-      return;
-    }
+  };
 
-    setError("");
-    form.submit(); // or handle submission here if needed
+  const CURRENT_ACCESS_KEY = getKey();
+  const [result, setResult] = useState<string>("");
+
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("Sending....");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const subject = `User Opted Out: ${name} Unsubscribed from IronClad Solutions LLC`;
+    formData.append("subject", subject);
+
+    formData.append(
+      "access_key",
+      CURRENT_ACCESS_KEY ?? "aecdc1f5-92d0-414c-b8ee-df48576fc611"
+    );
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data: { success: boolean; message: string } = await response.json();
+
+      if (data.success) {
+        setResult("Unsubscribed succesfully.");
+        form.reset();
+      } else {
+        console.error("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Fetch error", error);
+      setResult("An unexpected error occurred.");
+    }
   };
 
   return (
@@ -49,12 +72,7 @@ function Unsubscribe() {
         <br />
       </div>
 
-      <form
-        method="POST"
-        action="mailto:info@ironclad"
-        onSubmit={handleSubmit}
-        className="flex flex-col gap-4"
-      >
+      <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <label htmlFor="name" className="text-neutral-800 font-medium text-lg">
           Full Name:
         </label>
@@ -86,14 +104,13 @@ function Unsubscribe() {
           className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
         />
 
-        {error && <p className="text-red-600 text-sm">{error}</p>}
-
         <button
           type="submit"
           className="bg-[#2773a6] hover:bg-[#28679a] text-neutral-50 font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
         >
           Unsubscribe
         </button>
+        {result}
       </form>
 
       <p className="text-xs sm:text-sm mt-6">
