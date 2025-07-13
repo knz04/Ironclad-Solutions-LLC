@@ -12,7 +12,7 @@ function PrivacyPolicy() {
       ) {
         return "info@icsfsfl.com";
       } else {
-        return "info@ironcladsolutionsfltest.com";
+        return "info@ironcladsolutionsfl.com";
       }
     }
   };
