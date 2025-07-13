@@ -8,7 +8,7 @@ function PrivacyPolicy() {
       if (hostname === "icsfsfl.com" || hostname === "www.icsfsfl.com") {
         return "info@icsfsfl.com";
       } else {
-        return "info@ironcladsolutionsfl.com";
+        return "info@ironcladsolutionsfltest.com";
       }
     }
   };
