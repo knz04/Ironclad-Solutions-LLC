@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div className="w-full bg-neutral-950">
-      <div className="relative flex items-center mx-auto w-full md:w-[90%] py-4 md:py-0 h-20 md:h-24">
+      <div className="relative flex items-center mx-auto w-full md:w-[90%] py-4 md:py-0 h-24 md:h-28">
         <div className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 ml-4 z-20">
           <button
             onClick={toggleMenu}
@@ -32,7 +32,7 @@ function Navbar() {
         <div className="flex flex-1 justify-center md:justify-between items-center mx-auto w-[90%] ">
           <div className="flex gap-x-6 items-center">
             <NavLink to="/">
-              <img src={icon} alt="Logo" className="h-15" />
+              <img src={icon} alt="Logo" className="h-20" />
             </NavLink>
             <p className="hidden md:flex text-xl font-bold text-neutral-50">
               <NavLink to="/">IronClad Solutions LLC</NavLink>
