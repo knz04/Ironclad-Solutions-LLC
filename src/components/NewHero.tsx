@@ -12,7 +12,7 @@ function NewHero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
       {/* <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#2773a6] opacity-50 z-0"></div> */}
       <img src={herologo} className="w-100 z-10" />
 
