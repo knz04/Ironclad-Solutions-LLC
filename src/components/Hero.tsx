@@ -4,7 +4,7 @@ import hero from "../assets/hero.jpeg";
 function Hero() {
   return (
     <div
-      className="relative flex flex-col justify-center items-center gap-y-6 bg-[{hero}] h-[50vh] md:h-[88vh] p-12 md:p-4 bg-fixed"
+      className="relative flex flex-col justify-center items-center gap-y-6 bg-[{hero}] h-[50vh] lg:h-[88vh] p-12 md:p-4 bg-fixed"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundSize: "cover",
