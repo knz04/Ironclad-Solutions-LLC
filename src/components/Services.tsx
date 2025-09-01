@@ -15,12 +15,12 @@ interface Content {
 
 const content: Content[] = [
   {
-    icon: BriefcaseBusiness,
+    icon: House,
     title: "Estate Planning",
     subtitle: ["Wills", "Trusts", "Power of Attorney (Financial & Medical)"],
   },
   {
-    icon: HandHeart,
+    icon: BriefcaseBusiness,
     title: "Life Insurance",
     subtitle: [
       "Whole Life",
@@ -35,7 +35,7 @@ const content: Content[] = [
     subtitle: ["Tax-Free Retirement", "Indexed Annuities", "401(K) Rollovers"],
   },
   {
-    icon: House,
+    icon: HandHeart,
     title: "Family Legacy Services",
     subtitle: [
       'College Funds ("Million Dollar Baby")',
@@ -62,7 +62,7 @@ function Services() {
           Services
         </p>
         <p className="text-base md:text-xl text-center lg:text-left  font-light text-neutral-50">
-          Here are the ser
+          Here are the services we provide.
         </p>
       </div>
       <div className="grid lg:grid-cols-2 gap-y-8 gap-x-8 items-start">
