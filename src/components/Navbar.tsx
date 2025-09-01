@@ -1,5 +1,5 @@
 import { useState } from "react";
-import icon from "../assets/icon.png";
+import icon from "../assets/logo.jpeg";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -32,7 +32,7 @@ function Navbar() {
         <div className="flex flex-1 justify-center md:justify-between items-center mx-auto w-[90%] ">
           <div className="flex gap-x-6 items-center">
             <NavLink to="/">
-              <img src={icon} alt="Logo" className="h-20" />
+              <img src={icon} alt="Logo" className="hidden sm:block h-20" />
             </NavLink>
             <p className="hidden md:flex text-xl font-bold text-neutral-50">
               <NavLink to="/">IronClad Solutions LLC</NavLink>

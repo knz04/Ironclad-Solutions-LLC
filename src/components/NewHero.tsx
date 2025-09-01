@@ -1,5 +1,5 @@
 import hero from "../assets/newhero.png";
-import herologo from "../assets/herologo.png";
+import herologo from "../assets/logo.jpeg";
 
 function NewHero() {
   return (
@@ -14,7 +14,7 @@ function NewHero() {
     >
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
       {/* <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#2773a6] opacity-50 z-0"></div> */}
-      <img src={herologo} className="w-50 sm:w-90 md:w-80 lg:w-100 z-10" />
+      <img src={herologo} className="w-24 sm:w-40 md:w-50 lg:w-50 z-10" />
 
       <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl text-center text-neutral-50 z-10">
         Protect Your Family
