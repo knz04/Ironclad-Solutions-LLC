@@ -23,6 +23,7 @@ function WhoWeAre() {
                 className={`w-56 h-56 md:w-60 md:h-60 rounded-full mb-4 bg-cover bg-center bg-no-repeat shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-115`}
                 style={{
                   backgroundImage: `url('${item.profile}')`,
+                  backgroundPosition: "center 0",
                 }}
               />
             </Link>
