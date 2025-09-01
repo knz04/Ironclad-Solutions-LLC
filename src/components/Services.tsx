@@ -2,6 +2,7 @@ import {
   BriefcaseBusiness,
   BriefcaseMedical,
   Cross,
+  HandHeart,
   House,
   TrendingUp,
 } from "lucide-react";
@@ -15,6 +16,11 @@ interface Content {
 const content: Content[] = [
   {
     icon: BriefcaseBusiness,
+    title: "Estate Planning",
+    subtitle: ["Wills", "Trusts", "Power of Attorney (Financial & Medical)"],
+  },
+  {
+    icon: HandHeart,
     title: "Life Insurance",
     subtitle: [
       "Whole Life",
@@ -26,17 +32,15 @@ const content: Content[] = [
   {
     icon: TrendingUp,
     title: "Wealth & Retirement Planning",
-    subtitle: [
-      "Tax-Free Retirement",
-      "Indexed Annuities",
-      "401(K) Rollovers",
-      "Infinite Banking Concepts",
-    ],
+    subtitle: ["Tax-Free Retirement", "Indexed Annuities", "401(K) Rollovers"],
   },
   {
     icon: House,
     title: "Family Legacy Services",
-    subtitle: ["Wills", "Trusts", 'College Funds ("Million Dollar Baby")'],
+    subtitle: [
+      'College Funds ("Million Dollar Baby")',
+      "Infinite Banking Concepts",
+    ],
   },
   {
     icon: Cross,
@@ -46,7 +50,7 @@ const content: Content[] = [
   {
     icon: BriefcaseMedical,
     title: "Supplemental Health Insurance",
-    subtitle: ["Colonial", "Accident", "Critical Illness Hospital Indemnity"],
+    subtitle: ["Accident", "Critical Illness", "Hospital Indemnity"],
   },
 ];
 
@@ -58,7 +62,7 @@ function Services() {
           Services
         </p>
         <p className="text-base md:text-xl text-center lg:text-left  font-light text-neutral-50">
-          There will be some text here.
+          Here are the ser
         </p>
       </div>
       <div className="grid lg:grid-cols-2 gap-y-8 gap-x-8 items-start">

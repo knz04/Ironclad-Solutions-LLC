@@ -23,7 +23,7 @@ function NewHero() {
         Life Insurance
       </p>
       <p className="text-base sm:text-xl lg:text-3xl text-center text-neutral-50 z-10">
-        Whole Life - Indexed Universal Life (IUL) - Term Life Final Expense
+        Protecting Families • Securing Legacies • Building Wealth
       </p>
     </div>
   );
