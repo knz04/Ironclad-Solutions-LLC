@@ -26,6 +26,12 @@ function Footer() {
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1 min-w-[200px]">
           <Link
+            to="/"
+            className="text-lg font-bold hover:underline text-neutral-50 mb-2"
+          >
+            Home
+          </Link>
+          <Link
             to="/contact"
             className="text-lg font-bold hover:underline text-neutral-50 mb-4"
           >

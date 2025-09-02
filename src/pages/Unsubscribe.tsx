@@ -59,7 +59,7 @@ function Unsubscribe() {
   };
 
   return (
-    <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1 mx-auto my-12">
+    <div className="bg-neutral-50 p-8  shadow-xl w-full md:w-[40%] z-1 mx-auto my-12">
       <div className="flex flex-col text-center md:text-left">
         <p className="text-lg font-semibold pb-4">
           Unsubscribe from IronClad Solutions LLC
@@ -81,7 +81,7 @@ function Unsubscribe() {
           id="name"
           name="name"
           required
-          className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
+          className="p-3 border border-neutral-300  focus:outline-none focus:ring-2 focus:ring-sky-700"
         />
 
         <label htmlFor="email" className="text-neutral-800 font-medium text-lg">
@@ -91,7 +91,7 @@ function Unsubscribe() {
           type="email"
           id="email"
           name="email"
-          className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
+          className="p-3 border border-neutral-300  focus:outline-none focus:ring-2 focus:ring-sky-700"
         />
 
         <label htmlFor="phone" className="text-neutral-800 font-medium text-lg">
@@ -101,12 +101,12 @@ function Unsubscribe() {
           type="tel"
           id="phone"
           name="phone"
-          className="p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2773a6]"
+          className="p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-sky-700"
         />
 
         <button
           type="submit"
-          className="bg-[#2773a6] hover:bg-[#28679a] text-neutral-50 font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
+          className="hover:cursor-pointer bg-sky-700 hover:bg-neutral-50 text-neutral-50 hover:text-sky-700 font-bold py-3 px-6  shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
         >
           Unsubscribe
         </button>
@@ -117,11 +117,11 @@ function Unsubscribe() {
         You are receiving this message because you opted in to receive
         communications from IronClad Solutions LLC.
         <br />
-        <Link to="/privacy" className="text-[#2773a6] hover:underline">
+        <Link to="/privacy" className="text-sky-700 hover:underline">
           Privacy Policy
         </Link>{" "}
         |{" "}
-        <Link to="/unsubscribe" className="text-[#2773a6] hover:underline">
+        <Link to="/unsubscribe" className="text-sky-700 hover:underline">
           Unsubscribe
         </Link>
         <br />

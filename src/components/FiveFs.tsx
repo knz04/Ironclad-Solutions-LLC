@@ -76,10 +76,7 @@ function FiveFs() {
       </div>
       <div className="grid md:grid-cols-5 gap-y-2 md:gap-y-0 md:gap-x-2 px-1">
         {content.map((item, index) => (
-          <div
-            key={index}
-            className="bg-[#2773a6] shadow-xl flex flex-col py-10"
-          >
+          <div key={index} className="bg-sky-700 shadow-xl flex flex-col py-10">
             <div className="self-center py-2">
               <item.icon color="#ffffff" className="self-center w-12 h-12" />
             </div>
@@ -90,13 +87,15 @@ function FiveFs() {
               {item.subtitle}
             </p>
 
-            <button className="bg-neutral-50 py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-              <Link to={item.link} target="_blank">
-                <p className="text-sm text-center italic text-[#2773a6]">
-                  → {item.button}
-                </p>
-              </Link>
-            </button>
+            <Link
+              to={item.link}
+              target="_blank"
+              className="bg-neutral-50  py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105"
+            >
+              <p className="text-sm text-center italic text-sky-600">
+                → {item.button}
+              </p>
+            </Link>
           </div>
         ))}
       </div>

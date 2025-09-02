@@ -26,7 +26,7 @@ function NewHero() {
 
       <Link
         to="#how"
-        className="text-center text-base font-semibold text-neutral-50 hover:text-sky-600 bg-sky-600 hover:bg-neutral-50 hover:cursor-pointer mt-4 py-4 px-9 z-10 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115"
+        className="text-center text-base font-semibold text-neutral-50 hover:text-sky-700 bg-sky-700 hover:bg-neutral-50 hover:cursor-pointer mt-4 py-4 px-9 z-10 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-115"
       >
         Learn More
       </Link>
