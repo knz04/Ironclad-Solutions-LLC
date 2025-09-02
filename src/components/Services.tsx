@@ -1,7 +1,7 @@
 import {
+  Banknote,
   BriefcaseBusiness,
   BriefcaseMedical,
-  Cross,
   HandHeart,
   House,
   TrendingUp,
@@ -43,7 +43,7 @@ const content: Content[] = [
     ],
   },
   {
-    icon: Cross,
+    icon: Banknote,
     title: "Debt & Income Protection",
     subtitle: ["Debt Consolidation"],
   },

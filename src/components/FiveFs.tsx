@@ -27,7 +27,8 @@ const content: Content[] = [
   {
     icon: BanknoteArrowUp,
     title: "Tax-Advantaged Money Growth",
-    subtitle: "Risk-free, long-term wealth strategies using indexed products.",
+    subtitle:
+      "Risk-free, legacy strategies, and long-term wealth strategies using indexed products.",
     button: "Learn More",
     link: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
   },
@@ -36,7 +37,7 @@ const content: Content[] = [
     title: "Mortgage Protection",
     subtitle: "Mortgage protection—aligned with a long-term financial vision.",
     button: "Explore Mortgage Services",
-    link: "#",
+    link: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
   },
   {
     icon: Handshake,
