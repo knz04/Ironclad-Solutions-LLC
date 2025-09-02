@@ -44,6 +44,8 @@ function Schedule() {
                 className={`w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full flex-shrink-0 bg-cover bg-center bg-no-repeat shadow-lg`}
                 style={{
                   backgroundImage: `url('${item.profile}')`,
+
+                  backgroundPosition: "center 0",
                 }}
               />
 

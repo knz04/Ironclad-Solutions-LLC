@@ -21,7 +21,7 @@ export const team: Team[] = [
     name: "Sean Spengler",
     email: "sean.spengler@ira-a.org",
     phone: "954-830-1314",
-    calendly: "https://calendly.com/sean-spengler/20-minute-agent-meet-greet",
+    calendly: "https://calendly.com/sean-spengler/let-s-connect",
     idecide: "https://umustsee.net/ZFX6YF",
     mnr: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
   },
