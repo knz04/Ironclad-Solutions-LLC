@@ -27,14 +27,14 @@ function Schedule() {
       ></div>
       <div className="absolute inset-0 bg-black opacity-60 z-0"></div>{" "}
       <div className="relative z-10 flex flex-col justify-center items-center py-10 px-4 h-full">
-        <p className="text-4xl sm:text-5xl md:text-6xl text-neutral-50 py-4 font-bold text-center leading-tight">
+        <p className="text-4xl sm:text-5xl md:text-6xl text-neutral-50 mt-12 py-4 font-bold text-center leading-tight">
           Contact Us
         </p>
         <p className="text-base md:text-xl font-light text-neutral-50">
           Schedule a meeting with out dedicated professionals.
         </p>
 
-        <div className="w-full max-w-4xl bg-neutral-50 h-fit py-8 px-4 sm:px-6 md:px-8 lg:px-10 rounded-lg shadow-2xl mt-8">
+        <div className="w-full max-w-4xl bg-neutral-50 h-fit py-8 px-4 sm:px-6 md:px-8 lg:px-10 shadow-2xl mt-8">
           {team.map((item, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ function Schedule() {
                 id={item.id}
                 className="flex flex-col text-center sm:text-left"
               >
-                <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#2773a6] mb-1">
+                <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-sky-700 mb-1">
                   {item.name}
                 </p>
                 <p className="text-neutral-700 text-base sm:text-lg">
@@ -62,7 +62,7 @@ function Schedule() {
                 <Link
                   to={item.idecide}
                   target="_blank"
-                  className="hover:underline text-[#2773a6]"
+                  className="hover:underline text-sky-700"
                 >
                   —[click here to watch our interactive presentation]!
                 </Link>
@@ -73,14 +73,14 @@ function Schedule() {
                 <Link
                   to={item.mnr}
                   target="_blank"
-                  className="hover:underline text-[#2773a6]"
+                  className="hover:underline text-sky-700"
                 >
                   —[click here to find out how]!
                 </Link>
                 <Link
                   to={item.calendly}
                   target="_blank"
-                  className="hover:underline text-[#2773a6]"
+                  className="hover:underline text-sky-700"
                 >
                   —[schedule a time with us today]!
                 </Link>
@@ -89,7 +89,7 @@ function Schedule() {
                   Email:{" "}
                   <Link
                     to={`mailto:${item.email}`}
-                    className="hover:underline hover:text-[#2773a6]"
+                    className="hover:underline hover:text-sky-700"
                   >
                     {item.email}
                   </Link>
