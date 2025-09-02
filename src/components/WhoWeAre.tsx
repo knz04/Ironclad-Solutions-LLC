@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 function WhoWeAre() {
   return (
     <div className="lg:h-screen xl:h-[50vh] 2xl:h-[65vh] bg-linear-to-b from-[#555759] to-neutral-900 ">
-      <div className="flex flex-col justify-center items-center py-10">
-        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
+      <div className="flex flex-col justify-center items-center py-10 ">
+        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2 z-10">
           Who We Are
         </p>
-        <p className="text-base md:text-xl font-light text-neutral-50">
+        <p className="text-base md:text-xl font-light text-neutral-50 z-10">
           Meet the dedicated professionals behind our success.
         </p>
       </div>

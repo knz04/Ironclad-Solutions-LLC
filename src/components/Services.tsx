@@ -72,7 +72,7 @@ function Services() {
       </div>
       <div className="grid lg:grid-cols-2 gap-y-8 gap-x-8 items-start">
         {content.map((item, index) => (
-          <div key={index} className="text-left">
+          <div key={index} className="text-left z-10">
             <item.icon color="#ffffff" className="w-12 h-12 mb-2" />
             <p className="text-xl md:text-2xl/6 font-semibold text-neutral-50 mb-2">
               {item.title}
