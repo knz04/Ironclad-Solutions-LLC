@@ -56,7 +56,7 @@ const content: Content[] = [
 
 function Services() {
   return (
-    <div className="flex flex-col gap-y-8 lg:flex-row justify-evenly items-center bg-[#555759] py-8 lg:h-[80vh]">
+    <div className="flex flex-col gap-y-8 lg:flex-row justify-evenly items-center bg-[#555759] py-8 lg:h-[70vh] xl:h-[70vh]">
       <div>
         <p className="text-2xl md:text-4xl text-center lg:text-left font-semibold text-neutral-50 pb-2">
           Services

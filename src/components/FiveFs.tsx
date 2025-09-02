@@ -61,7 +61,7 @@ function FiveFs() {
   return (
     <div
       id="how"
-      className="md:h-[80vh] lg:h-[100vh] 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8"
+      className="md:h-[80vh] lg:h-[60vh] 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8"
     >
       <div className="flex flex-col justify-center items-center py-12">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
