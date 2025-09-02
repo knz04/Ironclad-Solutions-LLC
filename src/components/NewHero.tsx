@@ -16,15 +16,13 @@ function NewHero() {
       {/* <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#2773a6] opacity-50 z-0"></div> */}
       <img src={herologo} className="w-24 sm:w-40 md:w-50 lg:w-50 z-10" />
 
-      <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl text-center text-neutral-50 z-10">
-        Protect Your Family
+      <h1 className="font-bold text-3xl md:text-8xl text-center text-neutral-50 z-10">
+        Protecting Families
+        <br />
+        Securing Legacies
+        <br />
+        Building Wealth
       </h1>
-      <p className="text-2xl sm:text-4xl lg:text-6xl font-bold text-neutral-50 z-10">
-        Life Insurance
-      </p>
-      <p className="text-base sm:text-xl lg:text-3xl text-center text-neutral-50 z-10">
-        Protecting Families • Securing Legacies • Building Wealth
-      </p>
     </div>
   );
 }
