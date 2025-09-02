@@ -1,7 +1,6 @@
-import { useState } from "react";
-import icon from "../assets/logo.jpeg";
-import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +10,8 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full bg-neutral-950">
-      <div className="relative flex items-center mx-auto w-full md:w-[90%] py-4 md:py-0 h-24 md:h-28">
+    <div className="w-full absolute top-0 left-0 z-50 ">
+      <div className="relative flex items-center mx-auto w-full md:w-[90%] py-4 md:py-0 h-24 md:h-28 ">
         <div className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 ml-4 z-20">
           <button
             onClick={toggleMenu}
@@ -29,17 +28,9 @@ function Navbar() {
           </button>
         </div>
 
-        <div className="flex flex-1 justify-center md:justify-between items-center mx-auto w-[90%] ">
-          <div className="flex gap-x-6 items-center">
-            <NavLink to="/">
-              <img src={icon} alt="Logo" className="hidden sm:block h-20" />
-            </NavLink>
-            <p className="hidden md:flex text-xl font-bold text-neutral-50">
-              <NavLink to="/">IronClad Solutions LLC</NavLink>
-            </p>
-          </div>
+        <div className="flex flex-1 justify-center md:justify-end items-center mx-auto w-[90%] ">
           <nav className="hidden md:block">
-            <ul className=" text-lg flex gap-x-6 items-center text-neutral-50">
+            <ul className="text-lg flex gap-x-6 items-center text-neutral-50">
               <li className="hover:underline hover:underline-offset-8 font-light">
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -51,18 +42,18 @@ function Navbar() {
         </div>
 
         {isMenuOpen && (
-          <nav className="md:hidden absolute top-full left-0 right-0 w-full bg-neutral-950 shadow-lg z-20 py-4">
-            <ul className="text-lg flex flex-col items-center text-neutral-50">
-              <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
-                <NavLink to="/" onClick={toggleMenu}>
+          <nav className="md:hidden absolute top-full left-1/2 -translate-x-1/2 w-[80%] bg-neutral-900 shadow-lg z-20">
+            <ul className="text-lg flex flex-col text-neutral-50">
+              <NavLink to="/" onClick={toggleMenu}>
+                <li className="hover:bg-neutral-800 w-full text-start font-light p-4">
                   Home
-                </NavLink>
-              </li>
-              <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
-                <NavLink to="/contact" onClick={toggleMenu}>
+                </li>
+              </NavLink>
+              <NavLink to="/contact" onClick={toggleMenu}>
+                <li className="hover:bg-neutral-800 w-full text-start font-light p-4">
                   Contact Us
-                </NavLink>
-              </li>
+                </li>
+              </NavLink>
             </ul>
           </nav>
         )}

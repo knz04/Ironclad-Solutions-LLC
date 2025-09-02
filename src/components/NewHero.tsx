@@ -13,7 +13,6 @@ function NewHero() {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-      {/* <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#2773a6] opacity-50 z-0"></div> */}
       <img src={herologo} className="w-24 sm:w-40 md:w-50 lg:w-50 z-10" />
 
       <h1 className="font-bold text-3xl md:text-8xl text-center text-neutral-50 z-10">
