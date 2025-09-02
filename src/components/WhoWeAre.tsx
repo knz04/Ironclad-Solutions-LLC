@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function WhoWeAre() {
   return (
-    <div className="lg:h-screen xl:h-[50vh] 2xl:h-[60vh] bg-linear-to-b from-[#555759] to-neutral-900">
+    <div className="lg:h-screen xl:h-[50vh] 2xl:h-[65vh] bg-linear-to-b from-[#555759] to-neutral-900 ">
       <div className="flex flex-col justify-center items-center py-10">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           Who We Are
@@ -16,7 +16,7 @@ function WhoWeAre() {
         {team.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center z-10"
           >
             <Link to={`/contact#${item.id}`}>
               <div

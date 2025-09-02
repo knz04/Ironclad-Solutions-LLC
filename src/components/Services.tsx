@@ -6,6 +6,7 @@ import {
   House,
   TrendingUp,
 } from "lucide-react";
+import logo from "../assets/logo.png";
 
 interface Content {
   icon: React.ElementType;
@@ -56,8 +57,12 @@ const content: Content[] = [
 
 function Services() {
   return (
-    <div className="flex flex-col gap-y-8 lg:flex-row justify-evenly items-center bg-[#555759] py-8 lg:h-[70vh] xl:h-[70vh]">
-      <div>
+    <div className=" flex flex-col gap-y-8 lg:flex-row justify-evenly items-center bg-[#555759] py-8 lg:h-[70vh] xl:h-[70vh]">
+      <img
+        src={logo}
+        className="hidden lg:block absolute lg:-left-1/3 xl:-left-1/3 2xl:-left-1/3 3xl:-left-1/ lg:h-400 grayscale opacity-20 hover:filter-none hover:opacity-40 transition-all duration-300 ease-in-ou z-0"
+      />
+      <div className="z-10">
         <p className="text-2xl md:text-4xl text-center lg:text-left font-semibold text-neutral-50 pb-2">
           Services
         </p>

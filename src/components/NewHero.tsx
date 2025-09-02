@@ -14,7 +14,9 @@ function NewHero() {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-      <img src={herologo} className="w-24 sm:w-40 md:w-50 lg:w-50 z-10" />
+      <Link to="/" className="z-10">
+        <img src={herologo} className="w-24 sm:w-40 md:w-50 lg:w-50 xl:w-60 " />
+      </Link>
 
       <h1 className="font-bold text-3xl md:text-7xl/21 text-center text-neutral-50 z-10">
         Protecting Families
