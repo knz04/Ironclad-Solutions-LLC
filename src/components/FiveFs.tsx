@@ -20,7 +20,7 @@ const content: Content[] = [
   {
     icon: ShieldHalf,
     title: "Life Insurance & Protection",
-    subtitle: "Income replacement, living benefits, and legacy strategies.",
+    subtitle: "Income replacement and living benefits.",
     button: "Explore Life Insurance",
     link: "https://assets.corebridgefinancial.com/s7viewers/html5/VideoViewer.html?asset=aigdynamicmedia/chris-edwards-testimonial-cbf-AVS&config=aigdynamicmedia/Video",
   },
@@ -61,7 +61,7 @@ function FiveFs() {
   return (
     <div
       id="how"
-      className="md:h-[80vh] lg:h-[60vh] 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8"
+      className="h-fit md:h-[80vh] lg:h-[60vh] 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8"
     >
       <div className="flex flex-col justify-center items-center py-12">
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
