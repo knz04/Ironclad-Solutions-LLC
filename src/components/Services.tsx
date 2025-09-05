@@ -57,31 +57,46 @@ const content: Content[] = [
 
 function Services() {
   return (
-    <div className=" flex flex-col gap-y-8 lg:flex-row justify-evenly items-center bg-[#555759] py-8 h-fit lg:h-[70vh] xl:h-[70vh]">
+    <div className="relative flex flex-col gap-y-12 lg:flex-row justify-evenly items-center bg-[#555759] py-12 min-h-screen">
+      {/* Background logo */}
       <img
         src={logo}
-        className="hidden lg:block absolute lg:-left-1/3 xl:-left-1/3 2xl:left-10  lg:h-200 xl:h-250 2x:h-300 grayscale opacity-20 hover:filter-none hover:opacity-40 transition-all duration-300 ease-in-ou z-0"
+        alt="Logo background"
+        className="hidden lg:block absolute lg:-left-1/4 xl:-left-1/3 2xl:left-10 
+             lg:h-[44rem] xl:h-[52rem] 2xl:h-[60rem] 
+             grayscale opacity-20 
+             hover:filter-none hover:opacity-40 
+             transition-all duration-300 ease-in-out z-0"
       />
-      <div className="z-10">
-        <p className="text-2xl md:text-4xl text-center lg:text-left font-semibold text-neutral-50 pb-2">
+
+      {/* Section heading */}
+      <div className="z-10 text-center lg:text-left">
+        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           Services
         </p>
-        <p className="text-base md:text-xl text-center lg:text-left  font-light text-neutral-50">
+        <p className="text-base md:text-xl font-light text-neutral-50">
           Here are the services we provide.
         </p>
       </div>
-      <div className="grid lg:grid-cols-2 gap-y-8 gap-x-8 items-start">
+
+      {/* Services grid */}
+      <div className="grid gap-y-8 gap-x-12 lg:grid-cols-2 z-10">
         {content.map((item, index) => (
-          <div key={index} className="text-left z-10">
-            <item.icon color="#ffffff" className="w-12 h-12 mb-2" />
-            <p className="text-xl md:text-2xl/6 font-semibold text-neutral-50 mb-2">
+          <div key={index} className="text-left">
+            <item.icon color="#ffffff" className="w-12 h-12 mb-3" />
+            <p className="text-xl md:text-2xl font-semibold text-neutral-50 mb-2">
               {item.title}
             </p>
-            {item.subtitle.map((sub, subIndex) => (
-              <li key={subIndex} className="text-md md:text-lg text-neutral-50">
-                {sub}
-              </li>
-            ))}
+            <ul className="list-disc list-inside space-y-1">
+              {item.subtitle.map((sub, subIndex) => (
+                <li
+                  key={subIndex}
+                  className="text-md md:text-lg text-neutral-50"
+                >
+                  {sub}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

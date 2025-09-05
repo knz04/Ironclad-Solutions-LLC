@@ -61,10 +61,10 @@ function FiveFs() {
   return (
     <div
       id="how"
-      className="h-fit md:h-[80vh] lg:h-[60vh] 2xl:h-[70vh] bg-linear-to-b from-neutral-900 to-[#555759] py-8"
+      className="bg-gradient-to-b from-neutral-900 to-[#555759] py-16"
     >
-      <div className="flex flex-col justify-center items-center py-12">
-        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
+      <div className="flex flex-col justify-center items-center mb-12 px-4">
+        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2 text-center">
           How We Can Help
         </p>
         <p className="text-base md:text-xl text-center font-light text-neutral-50">
@@ -74,26 +74,27 @@ function FiveFs() {
           Faith, Family, Finance, Fitness, and Fun
         </p>
       </div>
-      <div className="grid md:grid-cols-5 gap-y-2 md:gap-y-0 md:gap-x-2 px-1">
+
+      <div className="grid md:grid-cols-5 gap-x-2 ">
         {content.map((item, index) => (
           <div
             key={index}
-            className="bg-sky-700 shadow-xl flex flex-col py-10 z-10"
+            className="bg-sky-700 shadow-xl flex flex-col py-10 px-4"
           >
             <div className="self-center py-2">
-              <item.icon color="#ffffff" className="self-center w-12 h-12" />
+              <item.icon color="#ffffff" className="w-12 h-12" />
             </div>
-            <p className="text-xl md:text-2xl/6 text-center font-semibold text-neutral-50 px-6 py-2">
+            <p className="text-xl md:text-2xl text-center font-semibold text-neutral-50 py-2">
               {item.title}
             </p>
-            <p className="text-md md:text-lg text-center text-neutral-50 px-4 py-3">
+            <p className="text-md md:text-lg text-center text-neutral-50 py-3">
               {item.subtitle}
             </p>
 
             <Link
               to={item.link}
               target="_blank"
-              className="bg-neutral-50  py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="bg-neutral-50 py-3 px-4 self-center hover:cursor-pointer shadow-md transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               <p className="text-sm text-center italic text-sky-600">
                 → {item.button}
