@@ -29,10 +29,13 @@ function WhoWeAre() {
             </Link>
             <Link
               to={`/contact#${item.id}`}
-              className="hover:text-sky-700 hover:underline transition text-base md:text-xl font-light text-neutral-50 pt-2"
+              className="hover:text-sky-700 hover:underline transition text-base font-semibold md:text-xl text-neutral-50 pt-2"
             >
               {item.name}
             </Link>
+            <p className="text-neutral-50 font-light text-base md:text-lg ">
+              {item.title}
+            </p>
           </div>
         ))}
       </div>

@@ -41,20 +41,22 @@ function Schedule() {
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 py-6 border-b border-neutral-200 last:border-b-0"
             >
               <div
-                className={`w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full flex-shrink-0 bg-cover bg-center bg-no-repeat shadow-lg`}
+                className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full flex-shrink-0 bg-cover bg-center bg-no-repeat shadow-lg"
                 style={{
                   backgroundImage: `url('${item.profile}')`,
-
                   backgroundPosition: "center 0",
                 }}
               />
 
               <div
                 id={item.id}
-                className="flex flex-col text-center sm:text-left"
+                className="flex flex-col text-center sm:text-left w-full"
               >
                 <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-sky-700 mb-1">
                   {item.name}
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-neutral-600 mb-2">
+                  {item.title}
                 </p>
                 <p className="text-neutral-700 text-base sm:text-lg">
                   Take the first step toward financial independence{" "}
@@ -97,6 +99,33 @@ function Schedule() {
                 <p className="text-neutral-700 text-base sm:text-lg">
                   Phone: {item.phone}
                 </p>
+
+                {/* Bio block */}
+                <p className="mt-6 font-bold text-neutral-800 text-base sm:text-lg w-full">
+                  Bio
+                </p>
+                <ul className="list-disc ml-5 sm:ml-6 mt-2 text-neutral-700 text-base sm:text-lg w-full text-left">
+                  <li className="ml-5 sm:ml-6 mb-1">
+                    Licensed Financial Professional
+                  </li>{" "}
+                  {/* hardcoded for everyone */}
+                  {item.bio.map((section, secIndex) => (
+                    <div key={secIndex} className="mb-3">
+                      {section.title && (
+                        <p className="font-semibold text-sky-700 mb-1">
+                          {section.title}
+                        </p>
+                      )}
+                      <ul className="list-disc ml-5 sm:ml-6">
+                        {section.points.map((point, pointIndex) => (
+                          <li key={pointIndex} className="mb-1">
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
