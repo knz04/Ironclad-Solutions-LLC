@@ -185,9 +185,11 @@ function PrivacyPolicy() {
                 </li>
                 <li>Mailing Address:</li>
                 <p>
-                  6272 Harbor Bnd
+                  2500 Hollywood Blvd.
                   <br />
-                  Margate, FL 33063
+                  Suite 407
+                  <br />
+                  Hollywood, FL 33020
                 </p>
               </ul>
 
