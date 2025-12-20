@@ -6,6 +6,7 @@ import NewHero from "../components/NewHero";
 import Services from "../components/Services";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Trust from "../components/Trust";
 
 function Home() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function Home() {
       <NewHero />
       <FiveFs />
       <Services />
+      <Trust />
       <WhoWeAre />
       <Contact />
     </>
