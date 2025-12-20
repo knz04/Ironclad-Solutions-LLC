@@ -75,7 +75,7 @@ function FiveFs() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-5 gap-x-2 ">
+      <div className="grid md:grid-cols-5 gap-x-2 gap-y-2 md:gap-y-0">
         {content.map((item, index) => (
           <div
             key={index}
