@@ -19,6 +19,7 @@ export default function Trust() {
         <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
           Our Trusted Estate Planning Partner
         </p>
+
         <p className="text-md md:text-lg text-neutral-50">
           Ironclad Solutions is proud to partner with Integrated Trust Systems
           (ITS), a nationally recognized leader in estate planning with 38 years
@@ -35,6 +36,14 @@ export default function Trust() {
           We work only with partners who meet our standards, and ITS exemplifies
           the level of trust and excellence we expect for our clients.
         </p>
+        <Link
+          to="https://www.bbb.org/us/az/scottsdale/profile/estate-planning-and-management/integrated-trust-systems-1126-7004806"
+          target="_blank"
+        >
+          <button className="hover:cursor-pointer bg-sky-700 hover:bg-neutral-50 text-neutral-50 hover:text-sky-700 font-bold py-3 px-6 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4">
+            A+ Business Rating with the Better Business Bureau
+          </button>
+        </Link>
       </div>
     </div>
   );
