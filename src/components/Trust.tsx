@@ -22,7 +22,7 @@ export default function Trust() {
 
         <p className="text-md md:text-lg text-neutral-50">
           Ironclad Solutions is proud to partner with Integrated Trust Systems
-          (ITS), a nationally recognized leader in estate planning with 38 years
+          (ITS), a nationally recognized leader in estate planning with 40 years
           of experience serving clients nationwide.
           <br />
           <br />
