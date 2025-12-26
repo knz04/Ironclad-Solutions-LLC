@@ -5,7 +5,7 @@ export default function Trust() {
   return (
     <div className="w-full h-fit xl:h-[50vh] 2xl:h-[65vh] flex flex-col md:flex-row justify-center gap-x-10 gap-y-4 md:gap-y-0 items-center  bg-[#555759]">
       <Link
-        to="https://www.bbb.org/us/az/scottsdale/profile/estate-planning-and-management/integrated-trust-systems-1126-7004806"
+        to="https://www.integratedtrustsystems.com/LANDING/"
         target="_blank"
       >
         <img
@@ -22,7 +22,7 @@ export default function Trust() {
 
         <p className="text-md md:text-lg text-neutral-50">
           Ironclad Solutions is proud to partner with Integrated Trust Systems
-          (ITS), a nationally recognized leader in estate planning with 38 years
+          (ITS), a nationally recognized leader in estate planning with 40 years
           of experience serving clients nationwide.
           <br />
           <br />
