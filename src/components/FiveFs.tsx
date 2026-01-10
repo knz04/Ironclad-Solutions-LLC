@@ -30,14 +30,14 @@ const content: Content[] = [
     subtitle:
       "Risk-free, legacy strategies, and long-term wealth strategies using indexed products.",
     button: "Learn More",
-    link: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
+    link: "https://andre-scroggie.mynewretirement.com/",
   },
   {
     icon: SquarePen,
     title: "Mortgage Protection",
     subtitle: "Mortgage protection—aligned with a long-term financial vision.",
     button: "Explore Mortgage Services",
-    link: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
+    link: "https://andre-scroggie.mynewretirement.com/",
   },
   {
     icon: Handshake,

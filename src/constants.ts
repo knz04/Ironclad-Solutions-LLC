@@ -30,7 +30,7 @@ export const team: Team[] = [
     phone: "(954) 830-1314",
     calendly: "https://calendly.com/sean-spengler/let-s-connect",
     idecide: "https://umustsee.net/ZFX6YF",
-    mnr: "https://ironcladsolutionsfl.mynewretirement.com/en-us",
+    mnr: "https://andre-scroggie.mynewretirement.com/",
     title: "Managing Partner",
     bio: [
       {
